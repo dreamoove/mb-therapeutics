@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <title>CHU & Hôpitaux — MB Therapeutics</title>
+  <meta name="description" content="Automatisez la préparation de médicaments personnalisés à l'hôpital. Réduisez les manipulations et sécurisez la production pédiatrique." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="./index.html" aria-label="MB Therapeutics — Accueil">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div class="logo__txt">
+          <span class="logo__name">MB Therapeutics</span>
+          <span class="logo__tag">Machine 3D • Médicament personnalisé</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./use-cases.html" class="dropdown-item is-hub">
+                    <strong>Vue d'ensemble</strong>
+                    <span>Tous les cas d'usage</span>
+                </a>
+                
+                <a href="./chu.html" class="dropdown-item">
+                    <strong>Hôpital</strong>
+                    <span>Pour les PUI et CHU</span>
+                </a>
+                <a href="./pharma.html" class="dropdown-item">
+                    <strong>Officine</strong>
+                    <span>Pour les préparatoires</span>
+                </a>
+                <a href="./industrie.html" class="dropdown-item">
+                    <strong>Industrie</strong>
+                    <span>Pour les CDMO & Labos</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Technologie <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./plateform.html" class="dropdown-item">
+                    <strong>La Plateforme</strong>
+                    <span>Machine, logiciel et QA/QC</span>
+                </a>
+                <a href="./process.html" class="dropdown-item">
+                    <strong>Le Process</strong>
+                    <span>De la poudre au médicament</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Entreprise <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./equipe.html" class="dropdown-item">Notre Équipe</a>
+                <a href="./histoire.html" class="dropdown-item">Notre Histoire</a>
+                <a href="./proofs.html" class="dropdown-item">Preuves & Avis</a>
+            </div>
+        </div>
+
+        <a href="./index.html#blog" class="nav-link">Blog</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" aria-label="Langue">
+            <a class="lang__pill is-active" href="#">FR</a>
+            <a class="lang__pill" href="#">EN</a>
+        </div>
+
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Thème sombre">🌙</button>
+        <a class="btn btn-primary hide-mobile" href="./contact.html">Demander un échange</a>
+        <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+      </div>
+    </div>
+
+    <div class="menuOverlay" id="menuOverlay" hidden></div>
+    <nav class="mobileNav" id="mobileNav" hidden>
+      <div class="mobileNav__head">
+        <span class="mobileNav__title">Menu</span>
+        <button class="mobileNav__close" id="menuClose">×</button>
+      </div>
+      
+      <div class="mobileNav__links">
+        
+        <details class="mobile-group">
+            <summary>Solutions</summary>
+            <div class="mobile-sub">
+                <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Vue d'ensemble</a>
+                <a href="./chu.html">Hôpital</a>
+                <a href="./pharma.html">Officine</a>
+                <a href="./industrie.html">Industrie</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Technologie</summary>
+            <div class="mobile-sub">
+                <a href="./plateform.html">La Plateforme</a>
+                <a href="./process.html">Le Process</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Entreprise</summary>
+            <div class="mobile-sub">
+                <a href="./equipe.html">Notre Équipe</a>
+                <a href="./histoire.html">Notre Histoire</a>
+                <a href="./proofs.html">Preuves</a>
+            </div>
+        </details>
+
+        <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+        <a class="mobileNav__link" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero-badges">
+            <span class="badge badge-award">CHU & Hôpitaux</span>
+            <span class="badge">Pédiatrie & Dosages spécifiques</span>
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            Automatisez les préparations personnalisées.
+          </h1>
+
+          <p class="hero__lead">
+            Une solution pour les pharmacies hospitalières : doses précises, process reproductible et sécurisé.
+            <strong>Réduisez les manipulations</strong> et libérez du temps qualifié.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn-primary" href="#lead">Lancer un pilote</a>
+            <a class="btn btn-secondary" href="#impact">Estimer l'impact</a>
+          </div>
+
+          <div class="hero__stats" style="margin-top:24px;">
+            <div class="stat">
+              <div class="stat__kpi">Standardisé</div>
+              <div class="stat__txt">Process</div>
+            </div>
+            <div class="stat">
+              <div class="stat__kpi">Sécurisé</div>
+              <div class="stat__txt">QA/QC</div>
+            </div>
+            <div class="stat">
+              <div class="stat__kpi">Traçable</div>
+              <div class="stat__txt">Par lot</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+            <video class="hero__video" autoplay muted loop playsinline poster="../assets/img/hero-machine.jpg">
+              <source src="../assets/video/machine-3d-medicament-sur-mesure.mp4" type="video/mp4" />
+            </video>
+            <div class="hero__mediaShade"></div>
+            <div class="hero__caption">
+                <span class="pill pill-teal">Pharmacie Hospitalière</span>
+                <span class="pill">Flux tendu</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners" style="padding-top:0;">
+        <div class="container">
+          <div class="partners-marquee" role="list">
+            <div class="partners-track">
+              <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt="Eurobiomed"></div>
+              <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt="CHU Nîmes"></div>
+              <div class="partner-pill"><img src="../assets/parteners/image001.png" alt="Lynxter"></div>
+              <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt="BIC"></div>
+              <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt="BPI"></div>
+              
+              <div class="partners-dup" aria-hidden="true">
+                <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/image001.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section">
+      <div class="container hero__grid" style="align-items: center;">
+        
+        <div class="hero__content">
+          <div class="badge" style="background:#FEF2F2; color:#DC2626; border-color:#FECACA; margin-bottom:12px;">🚨 Le constat actuel</div>
+          
+          <h2 class="h2">La préparation manuelle atteint ses limites.</h2>
+          <p class="muted" style="margin-top:12px; margin-bottom: 24px;">
+            Face à la hausse des demandes pédiatriques, le mode "artisianal" ne tient plus la cadence. Il mobilise vos ressources les plus qualifiées sur des tâches répétitives et anxiogènes.
+          </p>
+          
+          <div style="display:grid; gap:12px;">
+            
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #F87171;">
+                <div style="color:#DC2626; background:#FEF2F2; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">Chronophage</div>
+                    <div class="stat__txt" style="font-size:13px;">Jusqu'à <strong>90 min</strong> pour un lot manuel, bloquant un préparateur qualifié.</div>
+                </div>
+            </div>
+
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #FB923C;">
+                <div style="color:#EA580C; background:#FFF7ED; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">Risque & TMS</div>
+                    <div class="stat__txt" style="font-size:13px;">Variabilité inter-opérateurs et fatigue musculaire (gestes répétitifs).</div>
+                </div>
+            </div>
+
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #FCD34D;">
+                <div style="color:#D97706; background:#FFFBEB; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">Demandes refusées</div>
+                    <div class="stat__txt" style="font-size:13px;">Impossibilité d'absorber les pics d'activité ou les nouvelles molécules.</div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="hero__media" style="min-height: 400px; position:relative;">
+          <img class="hero__video" src="../assets/img/cleanroom.jpg" alt="Salle Blanche" loading="lazy" style="object-fit:cover;" />
+          
+          <div class="float float--c" style="bottom:20px; right:20px; border-left:4px solid #DC2626;">
+             <div class="float__title" style="color:#DC2626;">Flux Tendu</div>
+             <div class="float__desc">Risque de rupture</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--soft" id="impact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2">Rentabilité & Robustesse</h2>
+            <p class="subtle">Une réponse concrète aux tensions hospitalières : produisez plus, mieux et tout le temps.</p>
+          </div>
+        </div>
+        
+        <div class="hero__stats" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 24px;">
+            
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:var(--blue);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: var(--blue); margin-bottom:4px;">+50%</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Capacité Prod. *</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:var(--teal);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: var(--teal); margin-bottom:4px;">150h</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Économisées / an **</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:#8b5cf6;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 11 12 14 22 4"></polyline></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: #8b5cf6; margin-bottom:4px;">24/7</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Continuité ***</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:#10b981;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: #10b981; margin-bottom:4px;">100%</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Précision dosage ****</div>
+            </div>
+        </div>
+
+        <div class="infoCard" style="background: rgba(255,255,255,0.6); border:1px solid var(--border);">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;">
+                <div>
+                    <div style="margin-bottom: 16px;">
+                        <strong style="color:var(--blue); display:block; margin-bottom:4px;">* Absorbez les pics d'activité</strong>
+                        <p class="small muted" style="margin:0;">En passant d'un cycle manuel de 90 min à un cycle automatisé de 60 min, vous produisez <strong>3 lots au lieu de 2</strong> par demi-journée. Une réponse mécanique à l'augmentation des besoins pédiatriques.</p>
+                    </div>
+                    <div>
+                        <strong style="color:var(--teal); display:block; margin-bottom:4px;">** Un mois-homme redéployé</strong>
+                        <p class="small muted" style="margin:0;">150h/an, c'est l'équivalent d'un mois de travail temps plein. Ce temps qualifié n'est pas "supprimé", il est <strong>réinvesti</strong> sur des tâches à haute valeur (libération de lot, pharmacie clinique, gestion).</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style="margin-bottom: 16px;">
+                        <strong style="color:#8b5cf6; display:block; margin-bottom:4px;">*** Sécurisation du flux tendu</strong>
+                        <p class="small muted" style="margin:0;">La machine pallie les aléas RH (absentéisme, postes vacants). Elle garantit que les traitements pédiatriques seront produits et livrés aux services de soins, quelle que soit la charge de l'équipe.</p>
+                    </div>
+                    <div>
+                        <strong style="color:#10b981; display:block; margin-bottom:4px;">**** Risque iatrogène maîtrisé</strong>
+                        <p class="small muted" style="margin:0;">Au-delà du gain financier, c'est votre <strong>responsabilité pharmaceutique</strong> qui est blindée. Dosage piloté numériquement = zéro risque d'erreur de pesée ou de dilution manuelle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top:30px; text-align:center;">
+            <a class="btn btn-primary" href="#lead">Démontrer le ROI à ma direction</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Process Hospitalier</h2>
+            </div>
+            <div class="cards3">
+                <article class="card">
+                    <div class="card__img" style="height:160px; overflow:hidden;">
+                        <img src="../assets/img/steps-1.jpg" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">1. Préparer</h3>
+                        <p class="muted">Cartouches pharmaceutiques prêtes à l’emploi (plug & play).</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__img" style="height:160px; overflow:hidden;">
+                        <img src="../assets/img/steps-2.jpg" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">2. Paramétrer</h3>
+                        <p class="muted">Sélection sécurisée du dosage et de la quantité sur l'interface.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__img" style="height:160px; overflow:hidden;">
+                        <img src="../assets/img/steps-3.jpg" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">3. Produire</h3>
+                        <p class="muted">Production automatisée et traçable lot par lot.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Retours d'expérience</h2>
+            </div>
+            <div class="testimonials">
+                <figure class="tcard">
+                    <blockquote>“Le process est plus homogène et plus simple à piloter au quotidien pour l'équipe.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake3.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Pharmacien Hospitalier</div>
+                            <div class="tcard__role">CHU</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tcard">
+                    <blockquote>“On réduit la charge de manipulation et on sécurise mieux les dosages pédiatriques.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake2.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Cadre de Santé</div>
+                            <div class="tcard__role">Pédiatrie</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tcard">
+                    <blockquote>“Le temps libéré permet de se recentrer sur le contrôle et la libération des lots.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake1.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Responsable PUI</div>
+                            <div class="tcard__role">Hôpital Régional</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Questions fréquentes</h2>
+            </div>
+            <div class="faq">
+                <details class="faq__item">
+                    <summary>Peut-on démarrer par un projet pilote ?</summary>
+                    <div class="faq__content">Oui, c'est l'approche recommandée. Nous cadrons un pilote sur quelques mois avec des molécules ciblées.</div>
+                </details>
+                <details class="faq__item">
+                    <summary>Quel type de préparations cible en priorité ?</summary>
+                    <div class="faq__content">Les formes orales solides pédiatriques, les dosages hors AMM et les petites séries complexes.</div>
+                </details>
+                <details class="faq__item">
+                    <summary>Comment s’intègre la solution dans la PUI ?</summary>
+                    <div class="faq__content">La machine est compacte et conçue pour s'intégrer sous hotte ou en salle propre, selon vos protocoles de risque.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft" id="lead">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2">Projet Pilote</h2>
+            <p class="subtle">Vérifions ensemble la pertinence pour votre établissement.</p>
+          </div>
+        </div>
+
+        <div class="contact">
+            <aside class="contact__side">
+                <div class="infoCard">
+                    <div class="infoCard__title">Pour préparer l'échange</div>
+                    <ul class="bullets">
+                        <li>Types de molécules visées</li>
+                        <li>Volumes annuels approximatifs</li>
+                        <li>Contraintes d'installation</li>
+                    </ul>
+                </div>
+                <div class="infoCard infoCard--teal">
+                    <div class="infoCard__title">Confidentiel</div>
+                    <p class="muted small">Vos données restent strictement confidentielles.</p>
+                </div>
+            </aside>
+
+            <form class="form" id="leadForm">
+                <div class="form__grid">
+                    <label class="field">
+                        <span>Nom</span>
+                        <input type="text" id="name" required placeholder="Votre nom">
+                    </label>
+                    <label class="field">
+                        <span>Email pro</span>
+                        <input type="email" id="email" required placeholder="prenom.nom@chu.fr">
+                    </label>
+                    <label class="field">
+                        <span>Établissement</span>
+                        <input type="text" id="hospital" required placeholder="Nom du CHU / Hôpital">
+                    </label>
+                    <label class="field">
+                        <span>Téléphone</span>
+                        <input type="tel" id="phone" required placeholder="06...">
+                    </label>
+                    <label class="field field--full">
+                        <span>Message (Optionnel)</span>
+                        <textarea id="message" rows="3" placeholder="Contexte, service concerné..."></textarea>
+                    </label>
+                    
+                    <div class="form__actions field--full">
+                        <button class="btn btn-primary w-full" type="submit" id="submitBtn">Demander un rappel</button>
+                        <div id="toastOk" style="display:none; color:var(--teal); margin-top:10px;">✅ Demande envoyée.</div>
+                        <div id="toastErr" style="display:none; color:red; margin-top:10px;">❌ Erreur d'envoi.</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div>
+          <div class="footer__name">MB Therapeutics</div>
+          <div class="footer__tag">Machine 3D • Médicament personnalisé</div>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Liens footer">
+        <a href="index.html#usecases">Cas d’usage</a>
+        <a href="index.html#platform">Plateforme</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#preuves">Preuves</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="#lead">Contact</a>
+      </nav>
+
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> MB Therapeutics</span>
+        <span>•</span>
+        <a href="./legal.html">Mentions légales</a>
+        <span>•</span>
+        <a href="./privacy.html">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+  <script src="../js/chu.js" defer></script>
+</body>
+</html>

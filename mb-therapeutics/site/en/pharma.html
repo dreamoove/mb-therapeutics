@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <title>Pharmacies & Compounding — MB Therapeutics</title>
+  <meta name="description" content="Automate your compounding preparations. Profitability, precision, and safety for compounding pharmacies." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="./index.html" aria-label="MB Therapeutics — Home">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div class="logo__txt">
+          <span class="logo__name">MB Therapeutics</span>
+          <span class="logo__tag">3D Machine • Personalized Medicine</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main Navigation">
+        
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./use-cases.html" class="dropdown-item is-hub">
+                    <strong>Overview</strong>
+                    <span>All use cases</span>
+                </a>
+                
+                <a href="./chu.html" class="dropdown-item">
+                    <strong>Hospitals</strong>
+                    <span>For CHU & In-house Pharmacy</span>
+                </a>
+                <a href="./pharma.html" class="dropdown-item">
+                    <strong>Compounding</strong>
+                    <span>For Pharmacies</span>
+                </a>
+                <a href="./industrie.html" class="dropdown-item">
+                    <strong>Industry</strong>
+                    <span>For CDMOs & Labs</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Technology <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./plateform.html" class="dropdown-item">
+                    <strong>The Platform</strong>
+                    <span>Machine, Software, and QA/QC</span>
+                </a>
+                <a href="./process.html" class="dropdown-item">
+                    <strong>The Process</strong>
+                    <span>From Powder to Medicine</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Company <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./equipe.html" class="dropdown-item">Our Team</a>
+                <a href="./histoire.html" class="dropdown-item">Our History</a>
+                <a href="./proofs.html" class="dropdown-item">Proofs & Reviews</a>
+            </div>
+        </div>
+
+        <a href="./index.html#blog" class="nav-link">Blog</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" aria-label="Language">
+            <a class="lang__pill" href="#" onclick="const page = window.location.pathname.split('/').pop() || 'pharma.html'; window.location.href = '../fr/' + page; return false;">FR</a>
+            <span class="lang__pill is-active">EN</span>
+        </div>
+
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Dark Mode">🌙</button>
+        <a class="btn btn-primary hide-mobile" href="./contact.html">Request a meeting</a>
+        <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+      </div>
+    </div>
+
+    <div class="menuOverlay" id="menuOverlay" hidden></div>
+    <nav class="mobileNav" id="mobileNav" hidden>
+      <div class="mobileNav__head">
+        <span class="mobileNav__title">Menu</span>
+        <button class="mobileNav__close" id="menuClose">×</button>
+      </div>
+      
+      <div class="mobileNav__links">
+        
+        <details class="mobile-group">
+            <summary>Solutions</summary>
+            <div class="mobile-sub">
+                <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Overview</a>
+                <a href="./chu.html">Hospitals</a>
+                <a href="./pharma.html">Compounding</a>
+                <a href="./industrie.html">Industry</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Technology</summary>
+            <div class="mobile-sub">
+                <a href="./plateform.html">The Platform</a>
+                <a href="./process.html">The Process</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Company</summary>
+            <div class="mobile-sub">
+                <a href="./equipe.html">Our Team</a>
+                <a href="./histoire.html">Our History</a>
+                <a href="./proofs.html">Proofs</a>
+            </div>
+        </details>
+
+        <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+        <a class="mobileNav__link" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero-badges">
+            <span class="badge badge-award">Compounding Pharmacies</span>
+            <span class="badge">GMP Compliant</span>
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            Automate your compounding preparations.
+          </h1>
+
+          <p class="hero__lead">
+            Produce capsules and tablets with absolute precision.
+            <strong>Reduce your costs by 50%</strong> and secure your pediatric dosages.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn-primary" href="#roi">Calculate my ROI</a>
+            <a class="btn btn-secondary" href="#lead">Talk to an expert</a>
+          </div>
+
+          <div class="chips" style="margin-top: 24px;">
+            <span class="chip">Validated by:</span>
+            <span class="chip">Pharmacists</span>
+            <span class="chip">Health Authorities (GMP)</span>
+            <span class="chip">Pediatricians</span>
+          </div>
+        </div>
+
+        <div class="hero__media">
+            <video class="hero__video" autoplay muted loop playsinline poster="../assets/img/hero-machine.jpg">
+              <source src="../assets/video/machine-3d-medicament-sur-mesure.mp4" type="video/mp4" />
+            </video>
+            <div class="hero__mediaShade"></div>
+            <div class="hero__caption">
+                <span class="pill pill-teal">Automated</span>
+                <span class="pill">Time Saving</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners" style="padding-top:0;">
+        <div class="container">
+          <div class="partners-marquee" role="list">
+            <div class="partners-track">
+              <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt="Eurobiomed"></div>
+              <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt="CHU Nîmes"></div>
+              <div class="partner-pill"><img src="../assets/parteners/image001.png" alt="Lynxter"></div>
+              <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt="BIC"></div>
+              <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt="BPI"></div>
+              
+              <div class="partners-dup" aria-hidden="true">
+                <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/image001.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section">
+      <div class="container hero__grid" style="align-items: center;">
+        <div class="hero__content">
+          <div class="badge" style="background:#FEF2F2; color:#DC2626; border-color:#FECACA; margin-bottom:12px;">🚨 Current Situation</div>
+
+          <h2 class="h2">Manual processes have limits.</h2>
+          <p class="muted" style="margin-top:12px; margin-bottom: 24px;">
+            Manual compounding becomes a financial and sanitary risk when volumes increase. Operator variability, high labor time, and physical strain slow down your development.
+          </p>
+          
+          <div style="display:grid; gap:12px;">
+            
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #F87171;">
+                <div style="color:#DC2626; background:#FEF2F2; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">Cost > €2 / unit</div>
+                    <div class="stat__txt" style="font-size:13px;">Qualified labor weighs too heavily on the margin of small batches.</div>
+                </div>
+            </div>
+
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #FB923C;">
+                <div style="color:#EA580C; background:#FFF7ED; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">80 min / batch</div>
+                    <div class="stat__txt" style="font-size:13px;">Manual capsule filling: a time-consuming task with low added value for the team.</div>
+                </div>
+            </div>
+
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #FCD34D;">
+                <div style="color:#D97706; background:#FFFBEB; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">Risk & MSDs</div>
+                    <div class="stat__txt" style="font-size:13px;">Inter-operator variability and muscular fatigue (repetitive motions).</div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="hero__media" style="min-height: 400px; position:relative;">
+          <img class="hero__video" src="../assets/img/team.jpg" alt="Pharmacy Team" loading="lazy" style="object-fit:cover;" />
+          
+          <div class="float float--c" style="bottom:20px; right:20px; border-left:4px solid #DC2626;">
+             <div class="float__title" style="color:#DC2626;">HR Saturation</div>
+             <div class="float__desc">Loss of profitability</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="impact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2">Performance & Profitability</h2>
+            <p class="subtle">No longer choose between volume, precision, and personalization.</p>
+          </div>
+        </div>
+        
+        <div class="hero__stats" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 24px;">
+            
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:var(--blue);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: var(--blue); margin-bottom:4px;">60%</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Time Saved *</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:var(--teal);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: var(--teal); margin-bottom:4px;">x3</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Batch Size **</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:var(--text);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: var(--text); margin-bottom:4px;">∞</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Dosages / Cartridge ***</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:#10b981;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: #10b981; margin-bottom:4px;">100%</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Dosage Precision ****</div>
+            </div>
+        </div>
+
+        <div class="infoCard" style="background: rgba(255,255,255,0.6); border:1px solid var(--border);">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;">
+                <div>
+                    <div style="margin-bottom: 16px;">
+                        <strong style="color:var(--blue); display:block; margin-bottom:4px;">* Masked time & productivity</strong>
+                        <p class="small muted" style="margin:0;">Printing is autonomous. While the machine produces 100 capsules, your technician performs other tasks (creams, ointments, admin). You double their work capacity.</p>
+                    </div>
+                    <div>
+                        <strong style="color:var(--teal); display:block; margin-bottom:4px;">** Serial Production</strong>
+                        <p class="small muted" style="margin:0;">Where manual capsule filling becomes laborious beyond 60-100 units, the machine can chain 300 units without operator fatigue or quality drop.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style="margin-bottom: 16px;">
+                        <strong style="color:var(--text); display:block; margin-bottom:4px;">*** Total Flexibility</strong>
+                        <p class="small muted" style="margin:0;">Switch from a pediatric dosage (ex: 0.5mg) to an adult dosage (ex: 15mg) in 1 click on the screen. No tooling change, no cleaning, no powder loss.</p>
+                    </div>
+                    <div>
+                        <strong style="color:#10b981; display:block; margin-bottom:4px;">**** Absolute Precision</strong>
+                        <p class="small muted" style="margin:0;">Dosage is digitally controlled, not manually. Content uniformity is guaranteed on each unit, eliminating inter-operator variability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top:30px; text-align:center;">
+            <a class="btn btn-primary" href="#lead">Check compatibility of my molecules</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+            <h2 class="h2">A simple process</h2>
+        </div>
+        
+        <div class="cards3">
+          <article class="card">
+            <div class="card__img" style="height:180px; display:grid; place-items:center; overflow:hidden;">
+                <img src="../assets/img/cartridges.jpg" alt="Cartridge" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="card__body">
+              <h3 class="h3">1. Insert</h3>
+              <p class="muted">Ready-to-use cartridges. No cross-cleaning between two batches.</p>
+            </div>
+          </article>
+
+          <article class="card">
+             <div class="card__img" style="height:180px; display:grid; place-items:center; overflow:hidden;">
+                <img src="../assets/img/ui-screen.jpg" alt="Screen" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="card__body">
+              <h3 class="h3">2. Select</h3>
+              <p class="muted">Select dosage, form, and quantity on the touch screen.</p>
+            </div>
+          </article>
+
+          <article class="card">
+             <div class="card__img" style="height:180px; display:grid; place-items:center; overflow:hidden;">
+                <img src="../assets/img/mb-therapeutics-impr-medoc.jpg" alt="Machine" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="card__body">
+              <h3 class="h3">3. Produce</h3>
+              <p class="muted">Traceable printing. Batch release compliant with GMP.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Feedback</h2>
+            </div>
+            <div class="testimonials">
+                <figure class="tcard">
+                    <blockquote>“Finally, a solution to automate small volumes without losing precision.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake1.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Head Pharmacist</div>
+                            <div class="tcard__role">Specialized Pharmacy</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tcard">
+                    <blockquote>“Batch traceability is a real plus for meeting Health Authority requirements.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake2.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Compounding Manager</div>
+                            <div class="tcard__role">Subcontracting Pharmacy</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tcard">
+                    <blockquote>“ROI is quickly achieved thanks to time savings on pediatric series.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake3.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Financial Director</div>
+                            <div class="tcard__role">Pharmaceutical Group</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq">
+                <details class="faq__item">
+                    <summary>Is it GMP compliant?</summary>
+                    <div class="faq__content">Yes, the machine and software are designed to comply with Good Manufacturing Practices (traceability, cleaning, rights management).</div>
+                </details>
+                <details class="faq__item">
+                    <summary>Which dosage forms?</summary>
+                    <div class="faq__content">Mainly solid oral forms (dispersible tablets, printed capsules) with controlled release kinetics.</div>
+                </details>
+                <details class="faq__item">
+                    <summary>What is the production rate?</summary>
+                    <div class="faq__content">The machine is optimized for small personalized series (ex: 30 to 60 units/hour depending on complexity), where manual work is most costly.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft" id="lead">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2">Let's check feasibility.</h2>
+            <p class="subtle">Short exchange (15 min) to validate your volumes and ROI.</p>
+          </div>
+        </div>
+
+        <div class="contact">
+          
+          <aside class="contact__side">
+             <div class="infoCard">
+                <div class="infoCard__title">Why discuss?</div>
+                <ul class="bullets">
+                    <li>Verification of compatible molecules</li>
+                    <li>Precise ROI estimation</li>
+                    <li>Regulatory questions</li>
+                </ul>
+             </div>
+             <div class="infoCard infoCard--teal">
+                <div class="infoCard__title">Response within 24h</div>
+                <p class="muted small">Confidential data. No spam.</p>
+             </div>
+          </aside>
+
+          <form class="form" id="leadForm">
+            <div class="form__grid">
+              <label class="field field--full">
+                <span>Full Name</span>
+                <input type="text" id="name" required placeholder="Your name">
+              </label>
+              
+              <label class="field field--full">
+                <span>Work Email</span>
+                <input type="email" id="email" required placeholder="email@pharmacy.com">
+              </label>
+              
+              <label class="field">
+                <span>Pharmacy Name</span>
+                <input type="text" id="pharmacy" required placeholder="Structure name">
+              </label>
+              
+              <label class="field">
+                <span>Phone</span>
+                <input type="tel" id="phone" required placeholder="+1...">
+              </label>
+              
+              <label class="field field--full">
+                 <span>Message (Optional)</span>
+                 <textarea id="notes" rows="3" placeholder="Details on your needs..."></textarea>
+              </label>
+
+              <div class="form__actions field--full">
+                <button class="btn btn-primary w-full" type="submit" id="submitBtn">Request a callback</button>
+                <div id="toastOk" style="display:none; color:var(--teal); font-weight:bold; margin-top:10px;">✅ Request sent!</div>
+                <div id="toastErr" style="display:none; color:red; font-weight:bold; margin-top:10px;">❌ Technical error.</div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div>
+          <div class="footer__name">MB Therapeutics</div>
+          <div class="footer__tag">3D Machine • Personalized Medicine</div>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer Links">
+        <a href="./index.html#usecases">Use Cases</a>
+        <a href="./index.html#platform">Platform</a>
+        <a href="./index.html#process">Process</a>
+        <a href="#faq">FAQ</a>
+        <a href="#lead">Contact</a>
+      </nav>
+
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> MB Therapeutics</span>
+        <span>•</span>
+        <a href="./legal.html">Legal Notices</a>
+        <span>•</span>
+        <a href="./privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+  <script src="../js/pharma.js" defer></script>
+</body>
+</html>

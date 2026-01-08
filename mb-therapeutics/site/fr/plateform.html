@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B7A86" />
+
+  <title>Plateforme — MB Therapeutics</title>
+  <meta name="description" content="Une plateforme industrielle alliant logiciel, machine 3D et QA/QC pour la production de médicaments personnalisés. Standardisation et traçabilité." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+    <header class="header" id="top">
+        <div class="container header__inner">
+          <a class="logo" href="./index.html" aria-label="MB Therapeutics — Accueil">
+            <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+            <div class="logo__txt">
+              <span class="logo__name">MB Therapeutics</span>
+              <span class="logo__tag">Machine 3D • Médicament personnalisé</span>
+            </div>
+          </a>
+    
+          <nav class="nav" aria-label="Navigation principale">
+            
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./use-cases.html" class="dropdown-item is-hub">
+                        <strong>Vue d'ensemble</strong>
+                        <span>Tous les cas d'usage</span>
+                    </a>
+                    
+                    <a href="./chu.html" class="dropdown-item">
+                        <strong>Hôpital</strong>
+                        <span>Pour les PUI et CHU</span>
+                    </a>
+                    <a href="./pharma.html" class="dropdown-item">
+                        <strong>Officine</strong>
+                        <span>Pour les préparatoires</span>
+                    </a>
+                    <a href="./industrie.html" class="dropdown-item">
+                        <strong>Industrie</strong>
+                        <span>Pour les CDMO & Labos</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Technologie <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./plateform.html" class="dropdown-item">
+                        <strong>La Plateforme</strong>
+                        <span>Machine, logiciel et QA/QC</span>
+                    </a>
+                    <a href="./process.html" class="dropdown-item">
+                        <strong>Le Process</strong>
+                        <span>De la poudre au médicament</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Entreprise <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./equipe.html" class="dropdown-item">Notre Équipe</a>
+                    <a href="./histoire.html" class="dropdown-item">Notre Histoire</a>
+                    <a href="./proofs.html" class="dropdown-item">Preuves & Avis</a>
+                </div>
+            </div>
+    
+            <a href="./index.html#blog" class="nav-link">Blog</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </nav>
+    
+          <div class="header__actions">
+            <div class="lang" aria-label="Langue">
+                <a class="lang__pill is-active" href="#">FR</a>
+                <a class="lang__pill" href="#">EN</a>
+            </div>
+    
+            <button class="iconbtn" id="themeToggle" type="button" aria-label="Thème sombre">🌙</button>
+            <a class="btn btn-primary hide-mobile" href="./contact.html">Demander un échange</a>
+            <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+          </div>
+        </div>
+    
+        <div class="menuOverlay" id="menuOverlay" hidden></div>
+        <nav class="mobileNav" id="mobileNav" hidden>
+          <div class="mobileNav__head">
+            <span class="mobileNav__title">Menu</span>
+            <button class="mobileNav__close" id="menuClose">×</button>
+          </div>
+          
+          <div class="mobileNav__links">
+            
+            <details class="mobile-group">
+                <summary>Solutions</summary>
+                <div class="mobile-sub">
+                    <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Vue d'ensemble</a>
+                    <a href="./chu.html">Hôpital</a>
+                    <a href="./pharma.html">Officine</a>
+                    <a href="./industrie.html">Industrie</a>
+                </div>
+            </details>
+    
+            <details class="mobile-group">
+                <summary>Technologie</summary>
+                <div class="mobile-sub">
+                    <a href="./plateform.html">La Plateforme</a>
+                    <a href="./process.html">Le Process</a>
+                </div>
+            </details>
+    
+            <details class="mobile-group">
+                <summary>Entreprise</summary>
+                <div class="mobile-sub">
+                    <a href="./equipe.html">Notre Équipe</a>
+                    <a href="./histoire.html">Notre Histoire</a>
+                    <a href="./proofs.html">Preuves</a>
+                </div>
+            </details>
+    
+            <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+            <a class="mobileNav__link" href="./contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero-badges">
+            <span class="badge">Logiciel Opérateur</span>
+            <span class="badge">Machine 3D Pharmaceutique</span>
+            <span class="badge">QA/QC Intégré</span>
+            <span class="badge badge-award">Traçabilité complète</span>
+          </div>
+
+          <h1 class="hero__title">
+            Une plateforme industrielle pour la production personnalisée
+          </h1>
+
+          <p class="hero__lead">
+            MB Therapeutics combine logiciel, machine et process pour <strong>standardiser</strong>, <strong>tracer</strong> et <strong>sécuriser</strong> la production de médicaments personnalisés, à l’échelle hospitalière et industrielle.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn-secondary" href="./process.html">Découvrir le process</a>
+            <a class="btn btn-ghost" href="./use-cases.html">Voir les cas d’usage</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+            <img class="hero__video" src="../assets/img/mb-therapeutics-production.png" alt="Machine MB Therapeutics" style="object-fit:cover;">
+            <div class="hero__mediaShade"></div>
+            <div class="hero__caption">
+                <span class="pill pill-teal">Production</span>
+                <span class="pill">Système intégré</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="piliers">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2 class="h2">Les 3 piliers du système</h2>
+              <p class="subtle">Une approche intégrée pour garantir la reproductibilité, indépendamment de l'opérateur.</p>
+            </div>
+          </div>
+  
+          <div class="cards3">
+            
+            <article class="card" style="padding:24px;">
+              <div style="width:56px; height:56px; margin-bottom:20px; background:#EEF4FF; border-radius:16px; display:grid; place-items:center; color:#2563EB;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="card__body" style="padding:0;">
+                <h3 class="h3" style="margin-bottom:8px;">1. Logiciel Opérateur</h3>
+                <p class="muted">
+                  Interface de pilotage guidée. Gestion des recettes, paramétrage des dosages et verrouillage des étapes critiques pour limiter l'erreur humaine.
+                </p>
+                <div style="margin-top:12px; font-size:13px; font-weight:700; color:#2563EB; background:#EEF4FF; padding:6px 10px; border-radius:8px; width:fit-content;">
+                  Pilotage reproductible
+                </div>
+              </div>
+            </article>
+  
+            <article class="card" style="padding:24px;">
+              <div style="width:56px; height:56px; margin-bottom:20px; background:#E0F2F1; border-radius:16px; display:grid; place-items:center; color:#0B7A86;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div class="card__body" style="padding:0;">
+                <h3 class="h3" style="margin-bottom:8px;">2. Production Automatisée</h3>
+                <p class="muted">
+                  Technologie d'impression 3D pharmaceutique. Dépôt de matière précis, géométrie contrôlée et cadence adaptée aux séries ou à l'unité.
+                </p>
+                <div style="margin-top:12px; font-size:13px; font-weight:700; color:#0B7A86; background:#E0F2F1; padding:6px 10px; border-radius:8px; width:fit-content;">
+                  Standardisation industrielle
+                </div>
+              </div>
+            </article>
+  
+            <article class="card" style="padding:24px;">
+              <div style="width:56px; height:56px; margin-bottom:20px; background:#F3E8FF; border-radius:16px; display:grid; place-items:center; color:#7C3AED;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 11 12 14 22 4"></polyline></svg>
+              </div>
+              <div class="card__body" style="padding:0;">
+                <h3 class="h3" style="margin-bottom:8px;">3. QA / QC & Traçabilité</h3>
+                <p class="muted">
+                  Documentation automatique de chaque lot. Suivi des paramètres machine, enregistrement des actions et génération de rapports d'audit.
+                </p>
+                <div style="margin-top:12px; font-size:13px; font-weight:700; color:#7C3AED; background:#F3E8FF; padding:6px 10px; border-radius:8px; width:fit-content;">
+                  Qualité intégrée (QbD)
+                </div>
+              </div>
+            </article>
+  
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2">Positionnement terrain</h2>
+          </div>
+  
+          <div class="hero__grid" style="align-items:stretch;">
+              
+              <div class="infoCard" style="border-left:4px solid #F87171; background: linear-gradient(to right, #FEF2F2, white);">
+                  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+                      <div style="color:#DC2626; background:white; border:1px solid #FECACA; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; font-weight:bold;">✕</div>
+                      <h3 class="h3" style="color:#991B1B;">Ce que la plateforme ne fait pas</h3>
+                  </div>
+                  <ul class="bullets" style="display:grid; gap:8px;">
+                      <li style="color:#7F1D1D;">Elle ne remplace pas l'expertise du pharmacien</li>
+                      <li style="color:#7F1D1D;">Elle ne contourne pas vos procédures qualité</li>
+                      <li style="color:#7F1D1D;">Elle n'est pas un outil de prototypage "bricolé"</li>
+                  </ul>
+              </div>
+  
+              <div class="infoCard" style="border-left:4px solid #0B7A86; background: linear-gradient(to right, #E0F2F1, white);">
+                  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+                      <div style="color:#0B7A86; background:white; border:1px solid #0B7A86; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; font-weight:bold;">✓</div>
+                      <h3 class="h3" style="color:#0F5156;">Ce que la plateforme apporte</h3>
+                  </div>
+                  <ul class="bullets" style="display:grid; gap:8px;">
+                      <li style="color:#134E4A;"><strong>Standardisation</strong> des gestes et des résultats</li>
+                      <li style="color:#134E4A;"><strong>Réduction</strong> des manipulations manuelles à risque</li>
+                      <li style="color:#134E4A;"><strong>Gain de temps</strong> qualifié pour les équipes</li>
+                      <li style="color:#134E4A;"><strong>Capacité</strong> de production pilotée</li>
+                  </ul>
+              </div>
+  
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-bottom: 0;"> <div class="container">
+        <div class="section-head">
+            <div>
+                <h2 class="h2">Spécifications Techniques</h2>
+                <p class="subtle">Performance industrielle et conformité pharmacopée.</p>
+            </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:24px; position:relative; z-index:2;">
+            
+            <div class="stat" style="background:white; padding:24px; border:1px solid var(--border); border-top:4px solid #2563EB; box-shadow:var(--shadow2); border-radius:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:12px;">
+                    <div style="font-size:11px; font-weight:800; color:#2563EB; text-transform:uppercase; letter-spacing:0.05em; background:#EEF4FF; padding:4px 8px; border-radius:4px;">Process</div>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div style="font-weight:800; font-size:18px; color:var(--text); margin-bottom:6px;">FDM Pharmaceutique</div>
+                <p class="small muted" style="line-height:1.5;">Dépôt de fil fondu de grade médical. Tête d'impression haute température (jusqu'à 280°C).</p>
+            </div>
+
+            <div class="stat" style="background:white; padding:24px; border:1px solid var(--border); border-top:4px solid #0B7A86; box-shadow:var(--shadow2); border-radius:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:12px;">
+                     <div style="font-size:11px; font-weight:800; color:#0B7A86; text-transform:uppercase; letter-spacing:0.05em; background:#E0F2F1; padding:4px 8px; border-radius:4px;">Qualité</div>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B7A86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </div>
+                <div style="font-weight:800; font-size:18px; color:var(--text); margin-bottom:6px;">Précision &lt; 1%</div>
+                <p class="small muted" style="line-height:1.5;">Contrôle débit en boucle fermée. Uniformité de masse conforme à la Pharmacopée Européenne.</p>
+            </div>
+
+            <div class="stat" style="background:white; padding:24px; border:1px solid var(--border); border-top:4px solid #7C3AED; box-shadow:var(--shadow2); border-radius:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:12px;">
+                     <div style="font-size:11px; font-weight:800; color:#7C3AED; text-transform:uppercase; letter-spacing:0.05em; background:#F3E8FF; padding:4px 8px; border-radius:4px;">Matière</div>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                </div>
+                <div style="font-weight:800; font-size:18px; color:var(--text); margin-bottom:6px;">Polymères & API</div>
+                <p class="small muted" style="line-height:1.5;">Compatible HME (Extrusion thermofusible). Excipients : PVA, PLA, HPC, Eudragit®.</p>
+            </div>
+
+            <div class="stat" style="background:white; padding:24px; border:1px solid var(--border); border-top:4px solid #334155; box-shadow:var(--shadow2); border-radius:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:12px;">
+                     <div style="font-size:11px; font-weight:800; color:#334155; text-transform:uppercase; letter-spacing:0.05em; background:#F1F5F9; padding:4px 8px; border-radius:4px;">Integration</div>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </div>
+                <div style="font-weight:800; font-size:18px; color:var(--text); margin-bottom:6px;">Classe ISO 5 / 7</div>
+                <p class="small muted" style="line-height:1.5;">Conception hygiénique nettoyable. Encombrement réduit pour hotte ou isolateur.</p>
+            </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; align-items:center; margin-top:-20px; position:relative; z-index:1;">
+            <div style="width:2px; height:80px; background: linear-gradient(to bottom, transparent, var(--teal));"></div>
+            <div style="width:12px; height:12px; border-radius:50%; background:var(--teal); box-shadow: 0 0 0 4px #E0F2F1;"></div>
+        </div>
+
+    </div>
+</section>
+
+      <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <h2 class="h2">Flux logique de production</h2>
+                    <p class="subtle">De la demande à la libération du lot : tout est tracé numériquement.</p>
+                </div>
+            </div>
+
+            <div class="cards3">
+                
+                <article class="card">
+                    <div class="card__img" style="height:180px; position:relative;">
+                        <img src="../assets/img/mb-therapeutics-production.png" alt="Logiciel" style="width:100%; height:100%; object-fit:cover;">
+                        <div class="badge badge-award" style="position:absolute; top:12px; left:12px;">Étape 1</div>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">Paramétrage</h3>
+                        <p class="muted">L'opérateur sélectionne le médicament, le dosage et la quantité. Le logiciel valide la cohérence avec les plages autorisées.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img" style="height:180px; position:relative;">
+                        <img src="../assets/img/mb-therapeutics-industriel.png" alt="Production" style="width:100%; height:100%; object-fit:cover;">
+                        <div class="badge badge-award" style="position:absolute; top:12px; left:12px;">Étape 2</div>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">Production</h3>
+                        <p class="muted">La machine exécute le fichier d'impression (G-code validé). Les capteurs surveillent le bon déroulement (température, débit, dépôt).</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img" style="height:180px; position:relative;">
+                        <img src="../assets/img/mb-therapeutics-pharmacie.png" alt="Contrôle Qualité" style="width:100%; height:100%; object-fit:cover;">
+                        <div class="badge badge-award" style="position:absolute; top:12px; left:12px;">Étape 3</div>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">Contrôle & Data</h3>
+                        <p class="muted">En fin de cycle, un rapport de lot est généré. Les données de production sont archivées pour la traçabilité et la libération.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--dark">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2 h2--light">Sécurité & Conformité</h2>
+                <p class="subtle subtle--light">Conçu pour s'intégrer dans des environnements réglementés (BPF/GMP).</p>
+            </div>
+
+            <div class="cards3">
+                <div class="infoCard" style="background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.1);">
+                    <div class="infoCard__title" style="color:#fff;">Auditabilité</div>
+                    <p class="muted small" style="color:rgba(255,255,255,0.7);">
+                        Historique des actions opérateurs, versions des recettes et logs machine accessibles pour audit interne ou externe.
+                    </p>
+                </div>
+
+                <div class="infoCard" style="background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.1);">
+                    <div class="infoCard__title" style="color:#fff;">Intégration SI</div>
+                    <p class="muted small" style="color:rgba(255,255,255,0.7);">
+                        Architecture ouverte permettant, à terme, le dialogue avec vos LIMS ou Dossiers Patients Informatisés (DPI).
+                    </p>
+                </div>
+
+                <div class="infoCard" style="background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.1);">
+                    <div class="infoCard__title" style="color:#fff;">Matériaux & Nettoyage</div>
+                    <p class="muted small" style="color:rgba(255,255,255,0.7);">
+                        Pièces en contact certifiées pharma. Procédures de nettoyage et de changement de lot standardisées pour éviter les contaminations croisées.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">À qui s'adresse la plateforme ?</h2>
+                <p class="subtle">Une solution unique, adaptée aux contraintes de chaque environnement.</p>
+            </div>
+            
+            <div class="cards3">
+                <a href="./chu.html" class="card" style="text-decoration:none; transition:transform 0.2s; border-top:4px solid #2563EB;">
+                    <div class="card__body">
+                        <div style="width:48px; height:48px; margin-bottom:16px; background:#EEF4FF; border-radius:12px; display:grid; place-items:center; color:#2563EB;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"></path></svg>
+                        </div>
+                        <h3 class="h3" style="color:var(--text);">CHU & Hôpitaux</h3>
+                        <p class="muted">Pour les PUI : sécurisez la production pédiatrique et réduisez les manipulations.</p>
+                        <span style="color:#2563EB; font-weight:700; font-size:14px; margin-top:12px; display:block;">Voir le cas Hôpital →</span>
+                    </div>
+                </a>
+
+                <a href="./pharma.html" class="card" style="text-decoration:none; transition:transform 0.2s; border-top:4px solid #0B7A86;">
+                    <div class="card__body">
+                        <div style="width:48px; height:48px; margin-bottom:16px; background:#E0F2F1; border-radius:12px; display:grid; place-items:center; color:#0B7A86;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <h3 class="h3" style="color:var(--text);">Pharmacies Préparatoires</h3>
+                        <p class="muted">Pour les officines : automatisez les petites séries et rentabilisez le temps préparateur.</p>
+                        <span style="color:#0B7A86; font-weight:700; font-size:14px; margin-top:12px; display:block;">Voir le cas Officine →</span>
+                    </div>
+                </a>
+
+                <a href="./industrie.html" class="card" style="text-decoration:none; transition:transform 0.2s; border-top:4px solid #7C3AED;">
+                    <div class="card__body">
+                        <div style="width:48px; height:48px; margin-bottom:16px; background:#F3E8FF; border-radius:12px; display:grid; place-items:center; color:#7C3AED;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20M2 11h5l3-5 5 6 4-3v13"></path></svg>
+                        </div>
+                        <h3 class="h3" style="color:var(--text);">CDMO & Industriels</h3>
+                        <p class="muted">Pour la production : flexibilité des lots cliniques et réduction des coûts de setup.</p>
+                        <span style="color:#7C3AED; font-weight:700; font-size:14px; margin-top:12px; display:block;">Voir le cas Industrie →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--dark" style="position:relative; overflow:hidden;">
+        <div style="position:absolute; top:-50%; right:-10%; width:300px; height:300px; background:radial-gradient(circle, rgba(11,122,134,0.4) 0%, transparent 70%); border-radius:50%;"></div>
+        
+        <div class="container" style="position:relative; z-index:2;">
+            <div style="display:grid; grid-template-columns: 1fr auto; gap:40px; align-items:center;">
+                <div>
+                    <h2 class="h2 h2--light">Prêt pour un déploiement progressif ?</h2>
+                    <p class="subtle subtle--light" style="max-width:500px;">
+                        Pas de "Big Bang". Nous installons la plateforme étape par étape : cadrage, pilote sur site, puis montée en charge.
+                    </p>
+                    <div style="display:flex; gap:12px; margin-top:24px; flex-wrap:wrap;">
+                        <span style="background:rgba(255,255,255,0.1); color:white; padding:6px 12px; border-radius:20px; font-size:13px; font-weight:600;">1. Cadrage</span>
+                        <span style="color:rgba(255,255,255,0.4);">→</span>
+                        <span style="background:rgba(255,255,255,0.1); color:white; padding:6px 12px; border-radius:20px; font-size:13px; font-weight:600;">2. Pilote</span>
+                        <span style="color:rgba(255,255,255,0.4);">→</span>
+                        <span style="background:rgba(255,255,255,0.2); color:white; padding:6px 12px; border-radius:20px; font-size:13px; font-weight:600; border:1px solid rgba(255,255,255,0.4);">3. Scale-up</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="btn btn-light" href="./process.html">Voir le process de déploiement</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div style="background:var(--bg2); border:1px solid var(--border); border-radius:24px; padding:40px; display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:center;">
+                
+                <div>
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+                        <div style="background:#0B7A86; color:white; width:40px; height:40px; border-radius:50%; display:grid; place-items:center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h2 class="h2" style="margin:0;">Une question technique ?</h2>
+                    </div>
+                    <p class="muted">
+                        Nos ingénieurs et pharmaciens sont là pour répondre à vos interrogations sur la compatibilité des matériaux, les APIs ou l'intégration logicielle.
+                    </p>
+                    <ul class="bullets" style="margin-top:20px;">
+                        <li>Faisabilité technique</li>
+                        <li>Intégration SI (LIMS/DPI)</li>
+                        <li>Conformité réglementaire</li>
+                    </ul>
+                </div>
+
+                <div style="background:white; padding:32px; border-radius:16px; box-shadow:var(--shadow2); text-align:center;">
+                    <h3 class="h3" style="margin-bottom:8px;">Parler à un expert</h3>
+                    <p class="small muted" style="margin-bottom:24px;">Réponse sous 24h ouvrées.</p>
+                    <div style="display:grid; gap:12px;">
+                        <a class="btn btn-primary w-full" href="mailto:tech@mb-therapeutics.com">Envoyer un email technique</a>
+                        <a class="btn btn-secondary w-full" href="#top">Demander une démo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div>
+          <div class="footer__name">MB Therapeutics</div>
+          <div class="footer__tag">Machine 3D • Médicament personnalisé</div>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Liens footer">
+        <a href="./use-cases.html">Cas d’usage</a>
+        <a href="./platform.html">Plateforme</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#preuves">Preuves</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> MB Therapeutics</span>
+        <span>•</span>
+        <a href="./legal.html">Mentions légales</a>
+        <span>•</span>
+        <a href="./privacy.html">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B7A86" />
+
+  <title>The Platform — MB Therapeutics</title>
+  <meta name="description" content="An industrial platform combining software, 3D machine, and QA/QC for the production of personalized medicines. Standardization and traceability." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+    <header class="header" id="top">
+        <div class="container header__inner">
+          <a class="logo" href="./index.html" aria-label="MB Therapeutics — Home">
+            <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+            <div class="logo__txt">
+              <span class="logo__name">MB Therapeutics</span>
+              <span class="logo__tag">3D Machine • Personalized Medicine</span>
+            </div>
+          </a>
+    
+          <nav class="nav" aria-label="Main Navigation">
+            
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./use-cases.html" class="dropdown-item is-hub">
+                        <strong>Overview</strong>
+                        <span>All use cases</span>
+                    </a>
+                    
+                    <a href="./chu.html" class="dropdown-item">
+                        <strong>Hospitals</strong>
+                        <span>For CHU & In-house Pharmacy</span>
+                    </a>
+                    <a href="./pharma.html" class="dropdown-item">
+                        <strong>Compounding</strong>
+                        <span>For Pharmacies</span>
+                    </a>
+                    <a href="./industrie.html" class="dropdown-item">
+                        <strong>Industry</strong>
+                        <span>For CDMOs & Labs</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Technology <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./plateform.html" class="dropdown-item">
+                        <strong>The Platform</strong>
+                        <span>Machine, Software, and QA/QC</span>
+                    </a>
+                    <a href="./process.html" class="dropdown-item">
+                        <strong>The Process</strong>
+                        <span>From Powder to Medicine</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Company <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./equipe.html" class="dropdown-item">Our Team</a>
+                    <a href="./histoire.html" class="dropdown-item">Our History</a>
+                    <a href="./proofs.html" class="dropdown-item">Proofs & Reviews</a>
+                </div>
+            </div>
+    
+            <a href="./index.html#blog" class="nav-link">Blog</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </nav>
+    
+          <div class="header__actions">
+            <div class="lang" aria-label="Language">
+                <a class="lang__pill" href="#" onclick="const page = window.location.pathname.split('/').pop() || 'plateform.html'; window.location.href = '../fr/' + page; return false;">FR</a>
+                <span class="lang__pill is-active">EN</span>
+            </div>
+    
+            <button class="iconbtn" id="themeToggle" type="button" aria-label="Dark Mode">🌙</button>
+            <a class="btn btn-primary hide-mobile" href="./contact.html">Request a meeting</a>
+            <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+          </div>
+        </div>
+    
+        <div class="menuOverlay" id="menuOverlay" hidden></div>
+        <nav class="mobileNav" id="mobileNav" hidden>
+          <div class="mobileNav__head">
+            <span class="mobileNav__title">Menu</span>
+            <button class="mobileNav__close" id="menuClose">×</button>
+          </div>
+          
+          <div class="mobileNav__links">
+            
+            <details class="mobile-group">
+                <summary>Solutions</summary>
+                <div class="mobile-sub">
+                    <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Overview</a>
+                    <a href="./chu.html">Hospitals</a>
+                    <a href="./pharma.html">Compounding</a>
+                    <a href="./industrie.html">Industry</a>
+                </div>
+            </details>
+    
+            <details class="mobile-group">
+                <summary>Technology</summary>
+                <div class="mobile-sub">
+                    <a href="./plateform.html">The Platform</a>
+                    <a href="./process.html">The Process</a>
+                </div>
+            </details>
+    
+            <details class="mobile-group">
+                <summary>Company</summary>
+                <div class="mobile-sub">
+                    <a href="./equipe.html">Our Team</a>
+                    <a href="./histoire.html">Our History</a>
+                    <a href="./proofs.html">Proofs</a>
+                </div>
+            </details>
+    
+            <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+            <a class="mobileNav__link" href="./contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero-badges">
+            <span class="badge">Operator Software</span>
+            <span class="badge">Pharma 3D Machine</span>
+            <span class="badge">Integrated QA/QC</span>
+            <span class="badge badge-award">Full Traceability</span>
+          </div>
+
+          <h1 class="hero__title">
+            An industrial platform for personalized production
+          </h1>
+
+          <p class="hero__lead">
+            MB Therapeutics combines software, machine, and process to <strong>standardize</strong>, <strong>trace</strong>, and <strong>secure</strong> the production of personalized medicines, at both hospital and industrial scales.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn-secondary" href="./process.html">Discover the process</a>
+            <a class="btn btn-ghost" href="./use-cases.html">View use cases</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+            <img class="hero__video" src="../assets/img/mb-therapeutics-production.png" alt="MB Therapeutics Machine" style="object-fit:cover;">
+            <div class="hero__mediaShade"></div>
+            <div class="hero__caption">
+                <span class="pill pill-teal">Production</span>
+                <span class="pill">Integrated System</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="piliers">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2 class="h2">The 3 pillars of the system</h2>
+              <p class="subtle">An integrated approach to ensure reproducibility, regardless of the operator.</p>
+            </div>
+          </div>
+  
+          <div class="cards3">
+            
+            <article class="card" style="padding:24px;">
+              <div style="width:56px; height:56px; margin-bottom:20px; background:#EEF4FF; border-radius:16px; display:grid; place-items:center; color:#2563EB;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="card__body" style="padding:0;">
+                <h3 class="h3" style="margin-bottom:8px;">1. Operator Software</h3>
+                <p class="muted">
+                  Guided piloting interface. Recipe management, dosage settings, and locking of critical steps to limit human error.
+                </p>
+                <div style="margin-top:12px; font-size:13px; font-weight:700; color:#2563EB; background:#EEF4FF; padding:6px 10px; border-radius:8px; width:fit-content;">
+                  Reproducible piloting
+                </div>
+              </div>
+            </article>
+  
+            <article class="card" style="padding:24px;">
+              <div style="width:56px; height:56px; margin-bottom:20px; background:#E0F2F1; border-radius:16px; display:grid; place-items:center; color:#0B7A86;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div class="card__body" style="padding:0;">
+                <h3 class="h3" style="margin-bottom:8px;">2. Automated Production</h3>
+                <p class="muted">
+                  Pharmaceutical 3D printing technology. Precise material deposition, controlled geometry, and cadence adapted to series or single units.
+                </p>
+                <div style="margin-top:12px; font-size:13px; font-weight:700; color:#0B7A86; background:#E0F2F1; padding:6px 10px; border-radius:8px; width:fit-content;">
+                  Industrial standardization
+                </div>
+              </div>
+            </article>
+  
+            <article class="card" style="padding:24px;">
+              <div style="width:56px; height:56px; margin-bottom:20px; background:#F3E8FF; border-radius:16px; display:grid; place-items:center; color:#7C3AED;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 11 12 14 22 4"></polyline></svg>
+              </div>
+              <div class="card__body" style="padding:0;">
+                <h3 class="h3" style="margin-bottom:8px;">3. QA / QC & Traceability</h3>
+                <p class="muted">
+                  Automatic documentation of each batch. Machine parameter monitoring, action logging, and audit report generation.
+                </p>
+                <div style="margin-top:12px; font-size:13px; font-weight:700; color:#7C3AED; background:#F3E8FF; padding:6px 10px; border-radius:8px; width:fit-content;">
+                  Integrated Quality (QbD)
+                </div>
+              </div>
+            </article>
+  
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2">Field positioning</h2>
+          </div>
+  
+          <div class="hero__grid" style="align-items:stretch;">
+              
+              <div class="infoCard" style="border-left:4px solid #F87171; background: linear-gradient(to right, #FEF2F2, white);">
+                  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+                      <div style="color:#DC2626; background:white; border:1px solid #FECACA; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; font-weight:bold;">✕</div>
+                      <h3 class="h3" style="color:#991B1B;">What the platform does NOT do</h3>
+                  </div>
+                  <ul class="bullets" style="display:grid; gap:8px;">
+                      <li style="color:#7F1D1D;">It does not replace the pharmacist's expertise</li>
+                      <li style="color:#7F1D1D;">It does not bypass your quality procedures</li>
+                      <li style="color:#7F1D1D;">It is not a "DIY" prototyping tool</li>
+                  </ul>
+              </div>
+  
+              <div class="infoCard" style="border-left:4px solid #0B7A86; background: linear-gradient(to right, #E0F2F1, white);">
+                  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+                      <div style="color:#0B7A86; background:white; border:1px solid #0B7A86; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; font-weight:bold;">✓</div>
+                      <h3 class="h3" style="color:#0F5156;">What the platform delivers</h3>
+                  </div>
+                  <ul class="bullets" style="display:grid; gap:8px;">
+                      <li style="color:#134E4A;"><strong>Standardization</strong> of gestures and results</li>
+                      <li style="color:#134E4A;"><strong>Reduction</strong> of risky manual manipulations</li>
+                      <li style="color:#134E4A;"><strong>Qualified time savings</strong> for teams</li>
+                      <li style="color:#134E4A;"><strong>Capacity</strong> for piloted production</li>
+                  </ul>
+              </div>
+  
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-bottom: 0;"> <div class="container">
+        <div class="section-head">
+            <div>
+                <h2 class="h2">Technical Specifications</h2>
+                <p class="subtle">Industrial performance and pharmacopeia compliance.</p>
+            </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:24px; position:relative; z-index:2;">
+            
+            <div class="stat" style="background:white; padding:24px; border:1px solid var(--border); border-top:4px solid #2563EB; box-shadow:var(--shadow2); border-radius:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:12px;">
+                    <div style="font-size:11px; font-weight:800; color:#2563EB; text-transform:uppercase; letter-spacing:0.05em; background:#EEF4FF; padding:4px 8px; border-radius:4px;">Process</div>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div style="font-weight:800; font-size:18px; color:var(--text); margin-bottom:6px;">Pharmaceutical FDM</div>
+                <p class="small muted" style="line-height:1.5;">Medical-grade fused deposition modeling. High-temperature print head (up to 280°C).</p>
+            </div>
+
+            <div class="stat" style="background:white; padding:24px; border:1px solid var(--border); border-top:4px solid #0B7A86; box-shadow:var(--shadow2); border-radius:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:12px;">
+                     <div style="font-size:11px; font-weight:800; color:#0B7A86; text-transform:uppercase; letter-spacing:0.05em; background:#E0F2F1; padding:4px 8px; border-radius:4px;">Quality</div>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B7A86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </div>
+                <div style="font-weight:800; font-size:18px; color:var(--text); margin-bottom:6px;">Precision &lt; 1%</div>
+                <p class="small muted" style="line-height:1.5;">Closed-loop flow control. Mass uniformity compliant with European Pharmacopoeia.</p>
+            </div>
+
+            <div class="stat" style="background:white; padding:24px; border:1px solid var(--border); border-top:4px solid #7C3AED; box-shadow:var(--shadow2); border-radius:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:12px;">
+                     <div style="font-size:11px; font-weight:800; color:#7C3AED; text-transform:uppercase; letter-spacing:0.05em; background:#F3E8FF; padding:4px 8px; border-radius:4px;">Material</div>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                </div>
+                <div style="font-weight:800; font-size:18px; color:var(--text); margin-bottom:6px;">Polymers & API</div>
+                <p class="small muted" style="line-height:1.5;">HME (Hot Melt Extrusion) compatible. Excipients: PVA, PLA, HPC, Eudragit®.</p>
+            </div>
+
+            <div class="stat" style="background:white; padding:24px; border:1px solid var(--border); border-top:4px solid #334155; box-shadow:var(--shadow2); border-radius:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:12px;">
+                     <div style="font-size:11px; font-weight:800; color:#334155; text-transform:uppercase; letter-spacing:0.05em; background:#F1F5F9; padding:4px 8px; border-radius:4px;">Integration</div>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </div>
+                <div style="font-weight:800; font-size:18px; color:var(--text); margin-bottom:6px;">Class ISO 5 / 7</div>
+                <p class="small muted" style="line-height:1.5;">Cleanable hygienic design. Reduced footprint for hood or isolator integration.</p>
+            </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; align-items:center; margin-top:-20px; position:relative; z-index:1;">
+            <div style="width:2px; height:80px; background: linear-gradient(to bottom, transparent, var(--teal));"></div>
+            <div style="width:12px; height:12px; border-radius:50%; background:var(--teal); box-shadow: 0 0 0 4px #E0F2F1;"></div>
+        </div>
+
+    </div>
+</section>
+
+      <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <h2 class="h2">Production Logical Flow</h2>
+                    <p class="subtle">From request to batch release: everything is digitally traced.</p>
+                </div>
+            </div>
+
+            <div class="cards3">
+                
+                <article class="card">
+                    <div class="card__img" style="height:180px; position:relative;">
+                        <img src="../assets/img/mb-therapeutics-production.png" alt="Software" style="width:100%; height:100%; object-fit:cover;">
+                        <div class="badge badge-award" style="position:absolute; top:12px; left:12px;">Step 1</div>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">Setup</h3>
+                        <p class="muted">The operator selects the drug, dosage, and quantity. The software validates consistency with authorized ranges.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img" style="height:180px; position:relative;">
+                        <img src="../assets/img/mb-therapeutics-industriel.png" alt="Production" style="width:100%; height:100%; object-fit:cover;">
+                        <div class="badge badge-award" style="position:absolute; top:12px; left:12px;">Step 2</div>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">Production</h3>
+                        <p class="muted">The machine executes the print file (validated G-code). Sensors monitor smooth operation (temperature, flow, deposit).</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img" style="height:180px; position:relative;">
+                        <img src="../assets/img/mb-therapeutics-pharmacie.png" alt="Quality Control" style="width:100%; height:100%; object-fit:cover;">
+                        <div class="badge badge-award" style="position:absolute; top:12px; left:12px;">Step 3</div>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">Control & Data</h3>
+                        <p class="muted">At the end of the cycle, a batch report is generated. Production data is archived for traceability and release.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--dark">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2 h2--light">Safety & Compliance</h2>
+                <p class="subtle subtle--light">Designed for regulated environments (GMP/BPF).</p>
+            </div>
+
+            <div class="cards3">
+                <div class="infoCard" style="background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.1);">
+                    <div class="infoCard__title" style="color:#fff;">Auditability</div>
+                    <p class="muted small" style="color:rgba(255,255,255,0.7);">
+                        History of operator actions, recipe versions, and machine logs accessible for internal or external audit.
+                    </p>
+                </div>
+
+                <div class="infoCard" style="background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.1);">
+                    <div class="infoCard__title" style="color:#fff;">IT Integration</div>
+                    <p class="muted small" style="color:rgba(255,255,255,0.7);">
+                        Open architecture allowing future communication with your LIMS or Electronic Health Records (EHR).
+                    </p>
+                </div>
+
+                <div class="infoCard" style="background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.1);">
+                    <div class="infoCard__title" style="color:#fff;">Materials & Cleaning</div>
+                    <p class="muted small" style="color:rgba(255,255,255,0.7);">
+                        Pharma-certified contact parts. Standardized cleaning and batch changeover procedures to prevent cross-contamination.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Who is the platform for?</h2>
+                <p class="subtle">A unique solution, adapted to the constraints of each environment.</p>
+            </div>
+            
+            <div class="cards3">
+                <a href="./chu.html" class="card" style="text-decoration:none; transition:transform 0.2s; border-top:4px solid #2563EB;">
+                    <div class="card__body">
+                        <div style="width:48px; height:48px; margin-bottom:16px; background:#EEF4FF; border-radius:12px; display:grid; place-items:center; color:#2563EB;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"></path></svg>
+                        </div>
+                        <h3 class="h3" style="color:var(--text);">Hospitals & CHU</h3>
+                        <p class="muted">For In-house Pharmacies: secure pediatric production and reduce manual handling.</p>
+                        <span style="color:#2563EB; font-weight:700; font-size:14px; margin-top:12px; display:block;">View Hospital Case →</span>
+                    </div>
+                </a>
+
+                <a href="./pharma.html" class="card" style="text-decoration:none; transition:transform 0.2s; border-top:4px solid #0B7A86;">
+                    <div class="card__body">
+                        <div style="width:48px; height:48px; margin-bottom:16px; background:#E0F2F1; border-radius:12px; display:grid; place-items:center; color:#0B7A86;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <h3 class="h3" style="color:var(--text);">Compounding Pharmacies</h3>
+                        <p class="muted">For pharmacies: automate small series and make compounding time profitable.</p>
+                        <span style="color:#0B7A86; font-weight:700; font-size:14px; margin-top:12px; display:block;">View Compounding Case →</span>
+                    </div>
+                </a>
+
+                <a href="./industrie.html" class="card" style="text-decoration:none; transition:transform 0.2s; border-top:4px solid #7C3AED;">
+                    <div class="card__body">
+                        <div style="width:48px; height:48px; margin-bottom:16px; background:#F3E8FF; border-radius:12px; display:grid; place-items:center; color:#7C3AED;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20M2 11h5l3-5 5 6 4-3v13"></path></svg>
+                        </div>
+                        <h3 class="h3" style="color:var(--text);">CDMO & Industry</h3>
+                        <p class="muted">For production: clinical batch flexibility and reduced setup costs.</p>
+                        <span style="color:#7C3AED; font-weight:700; font-size:14px; margin-top:12px; display:block;">View Industry Case →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--dark" style="position:relative; overflow:hidden;">
+        <div style="position:absolute; top:-50%; right:-10%; width:300px; height:300px; background:radial-gradient(circle, rgba(11,122,134,0.4) 0%, transparent 70%); border-radius:50%;"></div>
+        
+        <div class="container" style="position:relative; z-index:2;">
+            <div style="display:grid; grid-template-columns: 1fr auto; gap:40px; align-items:center;">
+                <div>
+                    <h2 class="h2 h2--light">Ready for progressive deployment?</h2>
+                    <p class="subtle subtle--light" style="max-width:500px;">
+                        No "Big Bang". We install the platform step by step: scoping, on-site pilot, then scale-up.
+                    </p>
+                    <div style="display:flex; gap:12px; margin-top:24px; flex-wrap:wrap;">
+                        <span style="background:rgba(255,255,255,0.1); color:white; padding:6px 12px; border-radius:20px; font-size:13px; font-weight:600;">1. Scoping</span>
+                        <span style="color:rgba(255,255,255,0.4);">→</span>
+                        <span style="background:rgba(255,255,255,0.1); color:white; padding:6px 12px; border-radius:20px; font-size:13px; font-weight:600;">2. Pilot</span>
+                        <span style="color:rgba(255,255,255,0.4);">→</span>
+                        <span style="background:rgba(255,255,255,0.2); color:white; padding:6px 12px; border-radius:20px; font-size:13px; font-weight:600; border:1px solid rgba(255,255,255,0.4);">3. Scale-up</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="btn btn-light" href="./process.html">View deployment process</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div style="background:var(--bg2); border:1px solid var(--border); border-radius:24px; padding:40px; display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:center;">
+                
+                <div>
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+                        <div style="background:#0B7A86; color:white; width:40px; height:40px; border-radius:50%; display:grid; place-items:center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h2 class="h2" style="margin:0;">A technical question?</h2>
+                    </div>
+                    <p class="muted">
+                        Our engineers and pharmacists are here to answer your questions regarding material compatibility, APIs, or software integration.
+                    </p>
+                    <ul class="bullets" style="margin-top:20px;">
+                        <li>Technical Feasibility</li>
+                        <li>IT Integration (LIMS/EHR)</li>
+                        <li>Regulatory Compliance</li>
+                    </ul>
+                </div>
+
+                <div style="background:white; padding:32px; border-radius:16px; box-shadow:var(--shadow2); text-align:center;">
+                    <h3 class="h3" style="margin-bottom:8px;">Talk to an expert</h3>
+                    <p class="small muted" style="margin-bottom:24px;">Response within 24 business hours.</p>
+                    <div style="display:grid; gap:12px;">
+                        <a class="btn btn-primary w-full" href="mailto:tech@mb-therapeutics.com">Send technical email</a>
+                        <a class="btn btn-secondary w-full" href="#top">Request a demo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div>
+          <div class="footer__name">MB Therapeutics</div>
+          <div class="footer__tag">Machine 3D • Personalized Medicine</div>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer Links">
+        <a href="./use-cases.html">Use Cases</a>
+        <a href="./platform.html">Platform</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#preuves">Proofs</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> MB Therapeutics</span>
+        <span>•</span>
+        <a href="./legal.html">Legal Notices</a>
+        <span>•</span>
+        <a href="./privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+</body>
+</html>

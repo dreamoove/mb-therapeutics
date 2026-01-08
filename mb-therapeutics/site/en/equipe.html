@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B7A86" />
+
+  <title>Our Team — MB Therapeutics</title>
+  <meta name="description" content="Meet the MB Therapeutics team: pharmacists, engineers, and experts revolutionizing personalized medicine through 3D printing." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+        padding-bottom: 10px;
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Photo : Carré avec coins arrondis, fond gris par défaut */
+    .team-member__img-wrapper {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        border-radius: var(--r2);
+        background-color: var(--bg2); /* Gris clair du thème */
+        border: 1px solid var(--border);
+        margin-bottom: 16px;
+        position: relative;
+    }
+
+    .team-member img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease, transform 0.5s ease;
+    }
+
+    .team-member:hover img {
+        opacity: 0.95;
+        transform: scale(1.03);
+    }
+
+    /* Typographie */
+    .team-member h3 {
+        font-size: 20px;
+        font-weight: 950;
+        color: var(--teal); /* Couleur Teal du site */
+        margin: 0 0 6px 0;
+        transition: color 0.2s ease;
+    }
+
+    .team-member:hover h3 {
+        color: var(--teal2);
+    }
+
+    .team-member p {
+        font-size: 15px;
+        color: var(--text);
+        margin: 0;
+        font-weight: 600;
+        opacity: 0.8;
+    }
+
+    /* Petit badge LinkedIn au survol (Optionnel mais sympa) */
+    .linkedin-icon {
+        margin-top: 8px;
+        font-size: 12px;
+        color: var(--blue);
+        font-weight: 700;
+        opacity: 0;
+        transform: translateY(5px);
+        transition: all 0.3s ease;
+    }
+    .team-member:hover .linkedin-icon {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+    <header class="header" id="top">
+        <div class="container header__inner">
+          <a class="logo" href="./index.html" aria-label="MB Therapeutics — Home">
+            <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+            <div class="logo__txt">
+              <span class="logo__name">MB Therapeutics</span>
+              <span class="logo__tag">3D Machine • Personalized Medicine</span>
+            </div>
+          </a>
+    
+          <nav class="nav" aria-label="Main Navigation">
+            
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./use-cases.html" class="dropdown-item is-hub">
+                        <strong>Overview</strong>
+                        <span>All use cases</span>
+                    </a>
+                    
+                    <a href="./chu.html" class="dropdown-item">
+                        <strong>Hospitals</strong>
+                        <span>For CHU & In-house Pharmacy</span>
+                    </a>
+                    <a href="./pharma.html" class="dropdown-item">
+                        <strong>Compounding</strong>
+                        <span>For Pharmacies</span>
+                    </a>
+                    <a href="./industrie.html" class="dropdown-item">
+                        <strong>Industry</strong>
+                        <span>For CDMOs & Labs</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Technology <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./plateform.html" class="dropdown-item">
+                        <strong>The Platform</strong>
+                        <span>Machine, Software, and QA/QC</span>
+                    </a>
+                    <a href="./process.html" class="dropdown-item">
+                        <strong>The Process</strong>
+                        <span>From Powder to Medicine</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Company <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./equipe.html" class="dropdown-item">Our Team</a>
+                    <a href="./histoire.html" class="dropdown-item">Our History</a>
+                    <a href="./proofs.html" class="dropdown-item">Proofs & Reviews</a>
+                </div>
+            </div>
+    
+            <a href="./index.html#blog" class="nav-link">Blog</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </nav>
+    
+          <div class="header__actions">
+            <div class="lang" aria-label="Language">
+                <a class="lang__pill" href="#" onclick="const page = window.location.pathname.split('/').pop() || 'equipe.html'; window.location.href = '../fr/' + page; return false;">FR</a>
+                <span class="lang__pill is-active">EN</span>
+            </div>
+    
+            <button class="iconbtn" id="themeToggle" type="button" aria-label="Dark Mode">🌙</button>
+            <a class="btn btn-primary hide-mobile" href="./contact.html">Request a meeting</a>
+            <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+          </div>
+        </div>
+    
+        <div class="menuOverlay" id="menuOverlay" hidden></div>
+        <nav class="mobileNav" id="mobileNav" hidden>
+          <div class="mobileNav__head">
+            <span class="mobileNav__title">Menu</span>
+            <button class="mobileNav__close" id="menuClose">×</button>
+          </div>
+          
+          <div class="mobileNav__links">
+            
+            <details class="mobile-group">
+                <summary>Solutions</summary>
+                <div class="mobile-sub">
+                    <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Overview</a>
+                    <a href="./chu.html">Hospitals</a>
+                    <a href="./pharma.html">Compounding</a>
+                    <a href="./industrie.html">Industry</a>
+                </div>
+            </details>
+    
+            <details class="mobile-group">
+                <summary>Technology</summary>
+                <div class="mobile-sub">
+                    <a href="./plateform.html">The Platform</a>
+                    <a href="./process.html">The Process</a>
+                </div>
+            </details>
+    
+            <details class="mobile-group">
+                <summary>Company</summary>
+                <div class="mobile-sub">
+                    <a href="./equipe.html">Our Team</a>
+                    <a href="./histoire.html">Our History</a>
+                    <a href="./proofs.html">Proofs</a>
+                </div>
+            </details>
+    
+            <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+            <a class="mobileNav__link" href="./contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content" style="text-align:center; max-width:800px; margin:0 auto;">
+          <div class="hero-badges" style="justify-content:center;">
+            <span class="badge badge-award">Experts</span>
+            <span class="badge">Pharmacists & Engineers</span>
+          </div>
+
+          <h1 class="hero__title" style="text-align: center;">
+            A team of experts in pharmaceutical 3D printing
+          </h1>
+
+          <p class="hero__lead" style="margin: 16px auto;">
+            Pioneers of personalized medicine in France. We combine clinical expertise with industrial know-how.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        
+        <div class="team-grid">
+            
+            <a href="https://www.linkedin.com/in/stephane-roulon/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/stephane.jpg" alt="Stéphane Roulon" loading="lazy">
+                </div>
+                <h3>Stéphane Roulon</h3>
+                <p>Co-Founder & CEO</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ian-soulairol-059094a2/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/ian.jpg" alt="Ian Soulairol" loading="lazy">
+                </div>
+                <h3>Ian Soulairol</h3>
+                <p>Co-Founder & CTO</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/damien-stefanelli-06047827/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/damien.jpg" alt="Damien Stefanelli" loading="lazy">
+                </div>
+                <h3>Damien Stefanelli</h3>
+                <p>COO</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matthieu-van-delft/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/mathieu.jpeg" alt="Matthieu van Delft" loading="lazy">
+                </div>
+                <h3>Matthieu van Delft</h3>
+                <p>Chief Business Officer</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/manon-perez-88b8041b5/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/manon.jpg" alt="Manon Perez" loading="lazy">
+                </div>
+                <h3>Manon Perez</h3>
+                <p>Head Pharmacist & CQO</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/léna-lemierre/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/lena.jpg" alt="Léna Lemierre" loading="lazy">
+                </div>
+                <h3>Léna Lemierre</h3>
+                <p>R&D Formulation Engineer</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/candice-borys/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/candice.jpeg" alt="Morenikeji Aina" loading="lazy">
+                </div>
+                <h3>Candice Borys</h3>
+                <p>Apprentice - Master in Health Engineering</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sarah-mathé-8a6732267/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/sarah.jpg" alt="Sarah Mathé" loading="lazy">
+                </div>
+                <h3>Sarah Mathé</h3>
+                <p>R&D Formulation Apprentice</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/leo-le-strat/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/leo.jpeg" alt="Léo le Strat" loading="lazy">
+                </div>
+                <h3>Léo le Strat</h3>
+                <p>Business Developer</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/anaïs-ropero-89a639244/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/anais.jpg" alt="Anaïs Ropero" loading="lazy">
+                </div>
+                <h3>Anaïs Ropero</h3>
+                <p>Communication Manager</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/suzanne-guillotin/" target="_blank" rel="noopener" class="team-member">
+                <div class="team-member__img-wrapper">
+                    <img src="../assets/img/suzanne.jpeg" alt="Suzanne Guillotin" loading="lazy">
+                </div>
+                <h3>Suzanne Guillotin</h3>
+                <p>Apprentice - Master in Pharmacy</p>
+                <span class="linkedin-icon">View LinkedIn Profile →</span>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+            <div class="cta-bar">
+                <div>
+                    <h2 class="h2" style="font-size:24px;">Join the Adventure</h2>
+                    <p class="cta-bar__txt">
+                        We are regularly looking for passionate talents to revolutionize personalized medicine.
+                    </p>
+                </div>
+                <div class="cta-bar__actions">
+                    <a class="btn btn-primary" href="mailto:contact@mb-therapeutics.com">Spontaneous Application</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div>
+          <div class="footer__name">MB Therapeutics</div>
+          <div class="footer__tag">Machine 3D • Personalized Medicine</div>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer Links">
+        <a href="./use-cases.html">Use Cases</a>
+        <a href="./platform.html">Platform</a>
+        <a href="./process.html">Process</a>
+        <a href="./preuves.html">Proofs</a>
+        <a href="./index.html#blog">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> MB Therapeutics</span>
+        <span>•</span>
+        <a href="./legal.html">Legal Notices</a>
+        <span>•</span>
+        <a href="./privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>MB Therapeutics — Machine 3D pour médicaments personnalisés</title>
+  <meta name="description" content="Machine 3D pour produire des médicaments personnalisés : doses précises, reproductibles et traçables. Conçue pour CHU, pharmacies préparatoires et CDMO, avec QA/QC intégré." />
+
+  <link rel="canonical" href="https://www.mb-therapeutics.com/fr/" />
+  <link rel="alternate" hreflang="fr" href="https://www.mb-therapeutics.com/fr/" />
+  <link rel="alternate" hreflang="en" href="https://www.mb-therapeutics.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.mb-therapeutics.com/fr/" />
+
+  <meta property="og:title" content="MB Therapeutics — Machine 3D pour médicaments personnalisés" />
+  <meta property="og:description" content="Production pharmaceutique personnalisée : précision, QA/QC, traçabilité. Du CHU à l’industrialisation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mb-therapeutics.com/fr/" />
+  <meta property="og:image" content="https://www.mb-therapeutics.com/assets/og/og-fr.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="theme-color" content="#0B7A86" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"MB Therapeutics",
+    "url":"https://www.mb-therapeutics.com/fr/",
+    "logo":"https://www.mb-therapeutics.com/assets/img/logo-mb.png"
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="./index.html" aria-label="MB Therapeutics — Accueil">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div class="logo__txt">
+          <span class="logo__name">MB Therapeutics</span>
+          <span class="logo__tag">Machine 3D • Médicament personnalisé</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./use-cases.html" class="dropdown-item is-hub">
+                    <strong>Vue d'ensemble</strong>
+                    <span>Tous les cas d'usage</span>
+                </a>
+                
+                <a href="./chu.html" class="dropdown-item">
+                    <strong>Hôpital</strong>
+                    <span>Pour les PUI et CHU</span>
+                </a>
+                <a href="./pharma.html" class="dropdown-item">
+                    <strong>Officine</strong>
+                    <span>Pour les préparatoires</span>
+                </a>
+                <a href="./industrie.html" class="dropdown-item">
+                    <strong>Industrie</strong>
+                    <span>Pour les CDMO & Labos</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Technologie <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./plateform.html" class="dropdown-item">
+                    <strong>La Plateforme</strong>
+                    <span>Machine, logiciel et QA/QC</span>
+                </a>
+                <a href="./process.html" class="dropdown-item">
+                    <strong>Le Process</strong>
+                    <span>De la poudre au médicament</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Entreprise <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./equipe.html" class="dropdown-item">Notre Équipe</a>
+                <a href="./histoire.html" class="dropdown-item">Notre Histoire</a>
+                <a href="./proofs.html" class="dropdown-item">Preuves & Avis</a>
+            </div>
+        </div>
+
+        <a href="./index.html#blog" class="nav-link">Blog</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" aria-label="Langue">
+          <span class="lang__pill is-active">FR</span>
+          
+          <a class="lang__pill" href="#" onclick="const page = window.location.pathname.split('/').pop() || 'index.html'; window.location.href = '../en/' + page; return false;">EN</a>
+      </div>
+
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Thème sombre">🌙</button>
+        <a class="btn btn-primary hide-mobile" href="./contact.html">Demander un échange</a>
+        <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+      </div>
+    </div>
+
+    <div class="menuOverlay" id="menuOverlay" hidden></div>
+    <nav class="mobileNav" id="mobileNav" hidden>
+      <div class="mobileNav__head">
+        <span class="mobileNav__title">Menu</span>
+        <button class="mobileNav__close" id="menuClose">×</button>
+      </div>
+      
+      <div class="mobileNav__links">
+        
+        <details class="mobile-group">
+            <summary>Solutions</summary>
+            <div class="mobile-sub">
+                <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Vue d'ensemble</a>
+                <a href="./chu.html">Hôpital</a>
+                <a href="./pharma.html">Officine</a>
+                <a href="./industrie.html">Industrie</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Technologie</summary>
+            <div class="mobile-sub">
+                <a href="./plateform.html">La Plateforme</a>
+                <a href="./process.html">Le Process</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Entreprise</summary>
+            <div class="mobile-sub">
+                <a href="./equipe.html">Notre Équipe</a>
+                <a href="./histoire.html">Notre Histoire</a>
+                <a href="./proofs.html">Preuves</a>
+            </div>
+        </details>
+
+        <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+        <a class="mobileNav__link" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+
+      <div class="hero__content">
+        <div class="hero-badges">
+          <span class="badge badge-award">
+            🏆 Lauréat France 2030
+          </span>
+          <span class="badge">
+            Production pharmaceutique
+          </span>
+          <span class="badge">
+            QA/QC + traçabilité
+          </span>
+        </div>
+
+        <!-- H1 plus court + équilibré -->
+        <h1 class="hero__title" id="hero-title">
+          Machine 3D de médicaments personnalisés
+        </h1>
+
+        <p class="hero__lead">
+          Produire des doses <strong>précises</strong>, <strong>reproductibles</strong> et <strong>traçables</strong>,
+          avec un process pensé pour les contraintes terrain (QA/QC, intégration, montée en charge).
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn-primary" href="#contact">Demander un échange</a>
+          <a class="btn btn-secondary" href="#platform">Découvrir la plateforme</a>
+        </div>
+
+        <div class="hero__stats" role="list" aria-label="Points clés">
+          <div class="stat" role="listitem">
+            <div class="stat__kpi">QA/QC</div>
+            <div class="stat__txt">Intégré au process</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__kpi">Traçabilité</div>
+            <div class="stat__txt">Par série / lot</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__kpi">Déploiement</div>
+            <div class="stat__txt">Pilote → montée en charge</div>
+          </div>
+        </div>
+
+        <div class="chips" aria-label="Ciblage">
+          <span class="chip">CHU</span>
+          <span class="chip">Pharmacies préparatoires</span>
+          <span class="chip">CDMO</span>
+          <span class="chip">Environnement contrôlé</span>
+        </div>
+      </div>
+
+      <div class="hero__media" aria-label="Démonstration vidéo">
+        <!-- Option vidéo : garde tes sources / remplace si besoin -->
+        <video class="hero__video" autoplay muted loop playsinline poster="../assets/video/poster.jpg">
+          <source src="../assets/video/machine-3d-medicament-sur-mesure.webm" type="video/webm" />
+          <source src="../assets/video/machine-3d-medicament-sur-mesure.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero__mediaShade" aria-hidden="true"></div>
+
+        <div class="hero__caption" aria-hidden="true">
+          <span class="pill pill-teal">Environnement contrôlé</span>
+          <span class="pill">Salle blanche • opérateur • process</span>
+        </div>
+
+        <div class="float float--a" aria-hidden="true">
+          <div class="float__title">Interface opérateur</div>
+          <div class="float__desc">Pilotage clair & reproductible</div>
+        </div>
+        <div class="float float--b" aria-hidden="true">
+          <div class="float__title">Production standardisée</div>
+          <div class="float__desc">Capacité & coûts pilotés</div>
+        </div>
+        <div class="float float--c" aria-hidden="true">
+          <div class="float__title">QA/QC</div>
+          <div class="float__desc">Contrôle & traçabilité intégrés</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust" aria-label="Conçu pour">
+    <div class="container trust__inner">
+      <div class="trust__left">
+        <span class="trust__label">Conçu pour</span>
+        <span class="trust__line">des environnements exigeants</span>
+      </div>
+      <ul class="trust__list">
+        <li>CHU & hôpitaux</li>
+        <li>Pharmacies préparatoires</li>
+        <li>CDMO & industriels</li>
+        <li>Environnements QA/QC</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PARTNERS (marquee 1 ligne) -->
+  <section class="section partners" id="partenaires" aria-labelledby="partners-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="h2" id="partners-title">Nos partenaires</h2>
+          <p class="subtle">Écosystème clinique, industriel et innovation — déploiement progressif et crédible.</p>
+        </div>
+        <a class="btn btn-ghost" href="#contact">Devenir partenaire</a>
+      </div>
+  
+      <!-- Marquee (1 ligne, défilement) -->
+      <div class="partners-marquee" role="list" aria-label="Partenaires et soutiens">
+        <div class="partners-track">
+          <!-- France 2030 (badge) -->
+          <div class="partner-pill partner-pill--badge" role="listitem">
+            <span class="sr-only">Lauréat France 2030</span>
+  
+            <!-- Light -->
+            <img
+              class="logo-light"
+              src="../assets/parteners/Logotype-rouge-bleu.png"
+              alt="Lauréat France 2030"
+              width="160"
+              height="56"
+              loading="lazy"
+              decoding="async"
+            />
+  
+            <!-- Dark -->
+            <img
+              class="logo-dark"
+              src="../assets/parteners/Logotype-blanc.jpg"
+              alt="Lauréat France 2030"
+              width="160"
+              height="56"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+  
+          <a class="partner-pill" role="listitem" href="#" aria-label="Eurobiomed (partenaire)">
+            <img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt="Eurobiomed" width="160" height="56" loading="lazy" decoding="async">
+          </a>
+  
+          <a class="partner-pill" role="listitem" href="#" aria-label="CHU Nîmes (partenaire)">
+            <img src="../assets/parteners/chu-nimes-299x200.jpg" alt="CHU Nîmes" width="160" height="56" loading="lazy" decoding="async">
+          </a>
+  
+          <a class="partner-pill" role="listitem" href="#" aria-label="Lynxter (partenaire)">
+            <img src="../assets/parteners/image001.png" alt="Lynxter" width="160" height="56" loading="lazy" decoding="async">
+          </a>
+  
+          <a class="partner-pill" role="listitem" href="#" aria-label="BIC Montpellier (partenaire)">
+            <img src="../assets/parteners/bic3m.png" alt="BIC Montpellier" width="160" height="56" loading="lazy" decoding="async">
+          </a>
+  
+          <a class="partner-pill" role="listitem" href="#" aria-label="Montpellier Méditerranée Métropole (partenaire)">
+            <img src="../assets/parteners/metropole.png" alt="Montpellier Méditerranée Métropole" width="160" height="56" loading="lazy" decoding="async">
+          </a>
+  
+          <a class="partner-pill" role="listitem" href="#" aria-label="AD’OCC (partenaire)">
+            <img src="../assets/parteners/adocc.jpg" alt="AD’OCC" width="160" height="56" loading="lazy" decoding="async">
+          </a>
+  
+          <a class="partner-pill" role="listitem" href="#" aria-label="Bpifrance (partenaire)">
+            <img src="../assets/parteners/bpi-france-342x100.png" alt="Bpifrance" width="160" height="56" loading="lazy" decoding="async">
+          </a>
+  
+          <a class="partner-pill" role="listitem" href="#" aria-label="Créalia Occitanie (partenaire)">
+            <img src="../assets/parteners/logo-horizontal_Q_startup_bleu-600x249.png" alt="Créalia Occitanie" width="160" height="56" loading="lazy" decoding="async">
+          </a>
+  
+          <!-- DUPLICATION pour défilement fluide -->
+          <div class="partners-dup" aria-hidden="true">
+            <div class="partner-pill partner-pill--badge">
+              <img class="logo-light" src="../assets/parteners/Logotype-rouge-bleu.png" alt="" width="160" height="56" loading="lazy" decoding="async">
+              <img class="logo-dark"  src="../assets/parteners/Logotype-blanc.jpg" alt="" width="160" height="56" loading="lazy" decoding="async">
+            </div>
+  
+            <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt="" width="160" height="56" loading="lazy" decoding="async"></div>
+            <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt="" width="160" height="56" loading="lazy" decoding="async"></div>
+            <div class="partner-pill"><img src="../assets/parteners/image001.png" alt="" width="160" height="56" loading="lazy" decoding="async"></div>
+            <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt="" width="160" height="56" loading="lazy" decoding="async"></div>
+            <div class="partner-pill"><img src="../assets/parteners/metropole.png" alt="" width="160" height="56" loading="lazy" decoding="async"></div>
+            <div class="partner-pill"><img src="../assets/parteners/adocc.jpg" alt="" width="160" height="56" loading="lazy" decoding="async"></div>
+            <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt="" width="160" height="56" loading="lazy" decoding="async"></div>
+            <div class="partner-pill"><img src="../assets/parteners/logo-horizontal_Q_startup_bleu-600x249.png" alt="" width="160" height="56" loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+      </div>
+  
+      <p class="partners-note">
+        <span class="dot"></span>
+        Logos affichés à titre de référence. Les marques restent la propriété de leurs détenteurs.
+      </p>
+    </div>
+  </section>
+  
+
+  <!-- USE CASES -->
+  <section class="section" id="usecases" aria-labelledby="usecases-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="h2" id="usecases-title">3 cas d’usage, une plateforme</h2>
+          <p class="subtle">Chaque cible a ses contraintes. On adapte le cadrage, les métriques et le parcours (pilote, déploiement, montée en charge).</p>
+        </div>
+      </div>
+
+      <div class="cards3">
+        <article class="card">
+          <img class="card__img" src="../assets/img/mb-therapeutics-chu.png" alt="CHU et hôpitaux" loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="h3">CHU & hôpitaux</h3>
+            <p class="muted">Doses spécifiques, standardisation et impact organisationnel mesurable.</p>
+            <a class="link" href="chu.html">Voir le cas CHU →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__img" src="../assets/img/mb-therapeutics-pharmacie.png" alt="Pharmacies préparatoires" loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="h3">Pharmacies préparatoires</h3>
+            <p class="muted">Précision, reproductibilité, capacité et réduction du coût de revient.</p>
+            <a class="link" href="pharma.html">Voir le cas préparatoire →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__img" src="../assets/img/mb-therapeutics-industriel.png" alt="Industries et CDMO" loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="h3">Industriels / CDMO</h3>
+            <p class="muted">Industrialisation flexible multi-dosages, logique de production et traçabilité.</p>
+            <a class="link" href="industrie.html">Voir le cas CDMO →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS (3 blocs avec image par bloc) -->
+  <section class="section section--soft" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="h2" id="process-title">Comment ça marche</h2>
+          <p class="subtle">Une explication simple, orientée process — sans jargon inutile.</p>
+        </div>
+        <a class="btn btn-secondary" href="./process.html">Voir le process complet</a>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step__media">
+            <img src="../assets/img/step-0.png" alt="Interface opérateur" loading="lazy" decoding="async">
+          </div>
+          <div class="step__content">
+            <h3 class="h3">1) Interface & recette</h3>
+            <p class="muted">L’opérateur sélectionne le protocole, les paramètres et le lot. Les réglages sont tracés pour être reproductibles.</p>
+            <ul class="bullets">
+              <li>Recettes & séries</li>
+              <li>Paramètres standardisés</li>
+              <li>Contrôle opérateur</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__media">
+            <img src="../assets/img/steps-3.jpg" alt="Production standardisée" loading="lazy" decoding="async">
+          </div>
+          <div class="step__content">
+            <h3 class="h3">2) Production standardisée</h3>
+            <p class="muted">La fabrication est pilotée, mesurable et adaptée à la montée en charge : mêmes règles, mêmes sorties.</p>
+            <ul class="bullets">
+              <li>Précision & répétabilité</li>
+              <li>Cadrage piloté</li>
+              <li>Traçabilité intégrée</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__media">
+            <img src="../assets/img/salle-blanche-mb-therapeutics.png" alt="QA / QC en environnement contrôlé" loading="lazy" decoding="async">
+          </div>
+          <div class="step__content">
+            <h3 class="h3">3) QA / QC & conformité</h3>
+            <p class="muted">Contrôles qualité, auditabilité et preuves à chaque étape : c’est ce qui rend le déploiement crédible.</p>
+            <ul class="bullets">
+              <li>Environnement contrôlé</li>
+              <li>Contrôles qualité</li>
+              <li>Auditabilité</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="cta-bar">
+        <div>
+          <div class="cta-bar__title">Valider si ça colle à votre contexte</div>
+          <div class="cta-bar__txt">CHU, préparatoire, CDMO : on fait un cadrage court et on aligne les bons indicateurs.</div>
+        </div>
+        <div class="cta-bar__actions">
+          <a class="btn btn-primary" href="#contact">Demander un échange</a>
+          <a class="btn btn-secondary" href="./process.html">Voir le process</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="preuves" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="h2" id="testimonials-title">Ils en parlent</h2>
+          <p class="subtle">Retours terrain sur la reproductibilité, la traçabilité et le déploiement progressif.</p>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <figure class="tcard">
+          <blockquote>“Pilotage clair, process reproductible et traçabilité par lot. La logique est très maîtrisée.”</blockquote>
+          <figcaption class="tcard__who">
+            <img class="avatar" src="../assets/img/fake1.jpeg" alt="" loading="lazy" decoding="async">
+            <div>
+              <div class="tcard__name">Pharmacien(ne) hospitalier(ère)</div>
+              <div class="tcard__role">CHU</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="tcard">
+          <blockquote>“Le QA/QC intégré simplifie la mise en conformité et accélère la montée en charge.”</blockquote>
+          <figcaption class="tcard__who">
+            <img class="avatar" src="../assets/img/fake2.jpeg" alt="" loading="lazy" decoding="async">
+            <div>
+              <div class="tcard__name">Responsable Qualité</div>
+              <div class="tcard__role">Environnement contrôlé</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="tcard">
+          <blockquote>“Standardisation + indicateurs : on peut objectiver capacité, temps et coûts rapidement.”</blockquote>
+          <figcaption class="tcard__who">
+            <img class="avatar" src="../assets/img/fake3.jpeg" alt="" loading="lazy" decoding="async">
+            <div>
+              <div class="tcard__name">Ops / Industrialisation</div>
+              <div class="tcard__role">CDMO</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="mini-cta">
+        <div class="mini-cta__txt">
+          Souhaitez-vous accéder à des références adaptées à votre contexte
+          (CHU, pharmacie préparatoire ou environnement industriel) ?
+        </div>
+        <a class="btn btn-primary" href="#contact">Demander un échange</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM (dark block) -->
+  <section class="section section--dark" id="platform" aria-labelledby="platform-title">
+    <div class="container platform">
+      <div class="platform__left">
+        <h2 class="h2 h2--light" id="platform-title">Une plateforme pensée pour la production</h2>
+        <p class="subtle subtle--light">
+          Interface opérateur, cartouches pharmaceutiques, process QA/QC et traçabilité intégrée : MB Therapeutics pose les bases d’une production personnalisée standardisée.
+        </p>
+
+        <div class="tags">
+          <span class="tag">QA/QC</span>
+          <span class="tag">Traçabilité</span>
+          <span class="tag">Reproductibilité</span>
+          <span class="tag">Montée en charge</span>
+        </div>
+
+        <div class="platform__cta">
+          <a class="btn btn-light" href="./platform.html">Voir la plateforme</a>
+        </div>
+      </div>
+
+      <div class="platform__right">
+        <a class="pCard" href="./platform.html#interface">
+          <img src="../assets/img/ui-screen.jpg" alt="Interface opérateur" loading="lazy" decoding="async">
+          <span>Interface</span>
+        </a>
+        <a class="pCard" href="./platform.html#production">
+          <img src="../assets/img/mb-therapeutics-impr-medoc.jpg" alt="Production standardisée" loading="lazy" decoding="async">
+          <span>Production</span>
+        </a>
+        <a class="pCard" href="./platform.html#qaqc">
+          <img src="../assets/img/mb-therapeutics-qa-qc.png" alt="QA / QC" loading="lazy" decoding="async">
+          <span>QA / QC</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="videos" aria-labelledby="video-title">
+    <div class="container">
+      <div class="section-head section-head--row">
+        <div>
+          <h2 class="h2" id="video-title">En images</h2>
+          <p class="subtle">Démonstrations, interventions télévisées et retours terrain.</p>
+        </div>
+        <a class="btn btn-secondary" href="https://www.youtube.com/" target="_blank" rel="noopener">Voir la chaîne YouTube</a>
+      </div>
+
+      <div class="blogGrid">
+        
+        <article class="bCard">
+          <div class="bCard__media">
+            <iframe 
+              width="100%" 
+              height="200" 
+              src="https://www.youtube.com/embed/vafZZY-sPbc?si=P43gtZX4HyvbvUAi" 
+              title="Démonstration Machine" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen 
+              style="display:block; width:100%; border:none;">
+            </iframe>
+          </div>
+          <div class="bCard__body">
+            <div class="bMeta">BFM Business • 6 min</div>
+            <h3 class="h3">La Pépite : Médicaments sur-mesure</h3>
+            <p class="muted">Stéphane Roulon présente la technologie : comment automatiser la production pour la pédiatrie et sécuriser le travail des pharmaciens.</p>
+          </div>
+        </article>
+
+        <article class="bCard">
+          <div class="bCard__media">
+            <iframe 
+              width="100%" 
+              height="200" 
+              src="https://www.youtube.com/embed/xunpRFOnYvc?si=VxlIebpvxFp_-bkm"
+              title="Retour d'expérience CHU" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="display:block; width:100%; border:none;">
+            </iframe>
+          </div>
+          <div class="bCard__body">
+            <div class="bMeta">Europe 1 • 14 min</div>
+            <h3 class="h3">Souveraineté & Made in France</h3>
+            <p class="muted">Stéphane Roulon dans "La France Bouge" : vision industrielle, levée de fonds et impact sur la souveraineté sanitaire.</p>
+          </div>
+        </article>
+
+        <article class="bCard">
+          <div class="bCard__media">
+            <iframe 
+              width="100%" 
+              height="200" 
+              src="https://www.youtube.com/embed/pVNZfrdxLZY?si=sWhG0AlnRGwsE5DL"
+              title="Webinaire QA/QC" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="display:block; width:100%; border:none;">
+            </iframe>
+          </div>
+          <div class="bCard__body">
+            <div class="bMeta">Témoignage • 4 min</div>
+            <h3 class="h3">L'avis d'un Pharmacien Préparatoire</h3>
+            <p class="muted">Sébastien Gal explique l'apport concret : formes dispersibles pour les enfants, protection du personnel et gestion des pénuries.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (juste avant Contact) -->
+  <section class="section section--soft" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="h2" id="faq-title">FAQ</h2>
+          <p class="subtle">Questions fréquentes
+            Réponses claires, orientées terrain.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary>À qui s’adresse la solution ?</summary>
+          <div class="faq__content">
+            CHU & hôpitaux, pharmacies préparatoires et CDMO/industriels — avec un cadrage adapté à chaque environnement.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>Comment gérez-vous la QA / QC ?</summary>
+          <div class="faq__content">
+            QA/QC intégré au process : contrôles, traçabilité par lot/série, auditabilité et preuves à chaque étape.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>Est-ce déployable progressivement ?</summary>
+          <div class="faq__content">
+            Oui : on démarre en pilote, on aligne métriques et contraintes, puis on structure la montée en charge.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>Combien de temps pour un cadrage initial ?</summary>
+          <div class="faq__content">
+            En général, un échange court + une revue des contraintes terrain suffisent pour poser un plan d’action clair.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (form sur home) -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="h2" id="contact-title">Contact</h2>
+          <p class="subtle">Présentez-nous votre contexte (CHU, pharmacie préparatoire, CDMO ou industriel) et nous vous recontacterons rapidement.</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <form class="form" action="#" method="post">
+          <div class="form__grid">
+            <label class="field">
+              <span>Nom</span>
+              <input type="text" name="name" autocomplete="name" required placeholder="Votre nom" />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required placeholder="Votre@email.com" />
+            </label>
+
+            <label class="field">
+              <span>Organisation</span>
+              <input type="text" name="org" autocomplete="organization" placeholder="CHU / Pharma préparatoire / CDMO…" />
+            </label>
+
+            <label class="field">
+              <span>Contexte</span>
+              <select name="context">
+                <option value="chu">CHU & hôpital</option>
+                <option value="prepa">Pharmacie préparatoire</option>
+                <option value="cdmo">Industriel / CDMO</option>
+                <option value="other">Autre</option>
+              </select>
+            </label>
+
+            <label class="field field--full">
+              <span>Message</span>
+              <textarea name="message" rows="5" required placeholder="Objectif, contraintes, volume, planning…"></textarea>
+            </label>
+
+            <div class="form__actions field--full">
+              <button class="btn btn-primary" type="submit">Envoyer</button>
+              <p class="muted small">En envoyant ce formulaire, vous acceptez d’être recontacté par MB Therapeutics.
+                Aucune prospection automatisée. Vos informations restent confidentielles.</p>
+            </div>
+          </div>
+        </form>
+
+        <aside class="contact__side">
+          <div class="infoCard">
+            <div class="infoCard__title">Ce qu’on vous demandera (simple)</div>
+            <ul class="bullets">
+              <li>Votre environnement (CHU / préparatoire / CDMO)</li>
+              <li>Le niveau de QA/QC attendu</li>
+              <li>Les volumes / contraintes</li>
+              <li>Le mode de déploiement (pilote → scale)</li>
+            </ul>
+          </div>
+
+          <div class="infoCard infoCard--teal">
+            <div class="infoCard__title">Réponse rapide</div>
+            <p class="muted">On revient vers vous avec un cadrage court et une proposition d’étapes.</p>
+            <a class="btn btn-ghost w-full" href="#top">Retour en haut</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+      <div>
+        <div class="footer__name">MB Therapeutics</div>
+        <div class="footer__tag">Machine 3D • Médicament personnalisé</div>
+      </div>
+    </div>
+
+    <nav class="footer__links" aria-label="Liens footer">
+      <a href="#usecases">Cas d’usage</a>
+      <a href="#platform">Plateforme</a>
+      <a href="#process">Process</a>
+      <a href="#preuves">Preuves</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer__legal">
+      <span>© <span id="year"></span> MB Therapeutics</span>
+      <span>•</span>
+      <a href="./legal.html">Mentions légales</a>
+      <span>•</span>
+      <a href="./privacy.html">Confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/app.js" defer></script>
+
+
+</body>
+</html>

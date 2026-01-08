@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <title>Industry & CDMO — MB Therapeutics</title>
+  <meta name="description" content="Pharmaceutical 3D printing platform for CDMOs: standardization, multi-dosage flexibility, and reduced setup costs." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="./index.html" aria-label="MB Therapeutics — Home">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div class="logo__txt">
+          <span class="logo__name">MB Therapeutics</span>
+          <span class="logo__tag">3D Machine • Personalized Medicine</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main Navigation">
+        
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./use-cases.html" class="dropdown-item is-hub">
+                    <strong>Overview</strong>
+                    <span>All use cases</span>
+                </a>
+                
+                <a href="./chu.html" class="dropdown-item">
+                    <strong>Hospitals</strong>
+                    <span>For CHU & In-house Pharmacy</span>
+                </a>
+                <a href="./pharma.html" class="dropdown-item">
+                    <strong>Compounding</strong>
+                    <span>For Pharmacies</span>
+                </a>
+                <a href="./industrie.html" class="dropdown-item">
+                    <strong>Industry</strong>
+                    <span>For CDMOs & Labs</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Technology <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./plateform.html" class="dropdown-item">
+                    <strong>The Platform</strong>
+                    <span>Machine, Software, and QA/QC</span>
+                </a>
+                <a href="./process.html" class="dropdown-item">
+                    <strong>The Process</strong>
+                    <span>From Powder to Medicine</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Company <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./equipe.html" class="dropdown-item">Our Team</a>
+                <a href="./histoire.html" class="dropdown-item">Our History</a>
+                <a href="./proofs.html" class="dropdown-item">Proofs & Reviews</a>
+            </div>
+        </div>
+
+        <a href="./index.html#blog" class="nav-link">Blog</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" aria-label="Language">
+            <a class="lang__pill" href="#" onclick="const page = window.location.pathname.split('/').pop() || 'industrie.html'; window.location.href = '../fr/' + page; return false;">FR</a>
+            <span class="lang__pill is-active">EN</span>
+        </div>
+
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Dark Mode">🌙</button>
+        <a class="btn btn-primary hide-mobile" href="./contact.html">Request a meeting</a>
+        <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+      </div>
+    </div>
+
+    <div class="menuOverlay" id="menuOverlay" hidden></div>
+    <nav class="mobileNav" id="mobileNav" hidden>
+      <div class="mobileNav__head">
+        <span class="mobileNav__title">Menu</span>
+        <button class="mobileNav__close" id="menuClose">×</button>
+      </div>
+      
+      <div class="mobileNav__links">
+        
+        <details class="mobile-group">
+            <summary>Solutions</summary>
+            <div class="mobile-sub">
+                <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Overview</a>
+                <a href="./chu.html">Hospitals</a>
+                <a href="./pharma.html">Compounding</a>
+                <a href="./industrie.html">Industry</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Technology</summary>
+            <div class="mobile-sub">
+                <a href="./plateform.html">The Platform</a>
+                <a href="./process.html">The Process</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Company</summary>
+            <div class="mobile-sub">
+                <a href="./equipe.html">Our Team</a>
+                <a href="./histoire.html">Our History</a>
+                <a href="./proofs.html">Proofs</a>
+            </div>
+        </details>
+
+        <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+        <a class="mobileNav__link" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero-badges">
+            <span class="badge badge-award">Industrials & CDMO</span>
+            <span class="badge">Multi-dosage Production</span>
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            Industrialize personalized doses.
+          </h1>
+
+          <p class="hero__lead">
+            Standardize production, reduce manual operations and format changes (setup).
+            <strong>Small batch flexibility</strong> and <strong>total traceability</strong>.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn-primary" href="#lead">Request a demo</a>
+            <a class="btn btn-secondary" href="#case">Estimate business case</a>
+          </div>
+
+          <div class="hero__stats" style="margin-top:24px;">
+            <div class="stat">
+              <div class="stat__kpi">Setup</div>
+              <div class="stat__txt">Reduced (digital)</div>
+            </div>
+            <div class="stat">
+              <div class="stat__kpi">QA/QC</div>
+              <div class="stat__txt">Integrated</div>
+            </div>
+            <div class="stat">
+              <div class="stat__kpi">Scale-up</div>
+              <div class="stat__txt">Validated</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+            <video class="hero__video" autoplay muted loop playsinline poster="../assets/img/hero-machine.jpg">
+              <source src="../assets/video/machine-3d-medicament-sur-mesure.mp4" type="video/mp4" />
+            </video>
+            <div class="hero__mediaShade"></div>
+            <div class="hero__caption">
+                <span class="pill pill-teal">CDMO</span>
+                <span class="pill">Tech Transfer</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners" style="padding-top:0;">
+        <div class="container">
+          <div class="partners-marquee" role="list">
+            <div class="partners-track">
+              <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt="Eurobiomed"></div>
+              <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt="CHU Nîmes"></div>
+              <div class="partner-pill"><img src="../assets/parteners/image001.png" alt="Lynxter"></div>
+              <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt="BIC"></div>
+              <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt="BPI"></div>
+              
+              <div class="partners-dup" aria-hidden="true">
+                <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/image001.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust__inner">
+        <div class="trust__left">
+          <span class="trust__label">Challenges</span>
+          <span class="trust__line">Industrial challenges</span>
+        </div>
+        <ul class="trust__list">
+          <li>Tech Transfer</li>
+          <li>Validation</li>
+          <li>QA / QC</li>
+          <li>Traceability</li>
+          <li>Changeover</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container hero__grid" style="align-items: center;">
+        
+        <div class="hero__content">
+          <div class="badge" style="background:#FEF2F2; color:#DC2626; border-color:#FECACA; margin-bottom:12px;">🚨 Current Situation</div>
+          
+          <h2 class="h2">The complexity of small batches.</h2>
+          <p class="muted" style="margin-top:12px; margin-bottom: 24px;">
+            Your high-speed lines are not profitable for clinical or orphan batches. Format changeover times (setup) and material losses destroy your margin.
+          </p>
+          
+          <div style="display:grid; gap:12px;">
+            
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #F87171;">
+                <div style="color:#DC2626; background:#FEF2F2; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">Long Changeover</div>
+                    <div class="stat__txt" style="font-size:13px;">Hours of machine downtime for cleaning and tooling adjustments between two different batches.</div>
+                </div>
+            </div>
+
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #FB923C;">
+                <div style="color:#EA580C; background:#FFF7ED; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">Material Waste</div>
+                    <div class="stat__txt" style="font-size:13px;">Significant start-up waste, unacceptable for expensive APIs.</div>
+                </div>
+            </div>
+
+            <div class="stat" style="display:flex; align-items:center; gap:16px; padding:16px; border-left:4px solid #FCD34D;">
+                <div style="color:#D97706; background:#FFFBEB; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                </div>
+                <div>
+                    <div class="stat__kpi" style="font-size:18px; color:var(--text);">Degraded OEE</div>
+                    <div class="stat__txt" style="font-size:13px;">Immobilizing a 50k/h line to produce 500 units is an economic aberration.</div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="hero__media" style="min-height: 400px; position:relative;">
+          <img class="hero__video" src="../assets/img/mb-therapeutics-impr-medoc.jpg" alt="Industrial Line" loading="lazy" style="object-fit:cover;" />
+          
+          <div class="float float--c" style="bottom:20px; right:20px; border-left:4px solid #DC2626;">
+             <div class="float__title" style="color:#DC2626;">Unsuitable Tool</div>
+             <div class="float__desc">High hidden costs</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+          <div class="section-head">
+              <div>
+                  <h2 class="h2">What the platform changes</h2>
+                  <p class="subtle">An industrial approach rethought for agility and compliance.</p>
+              </div>
+          </div>
+          
+          <div class="cards3">
+              
+              <article class="card" style="padding:24px;">
+                  <div style="width:48px; height:48px; margin-bottom:16px; background:#E0F2F1; border-radius:12px; display:grid; place-items:center; color:#0B7A86;">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  </div>
+                  <h3 class="h3" style="margin-bottom:8px;">Flexibility</h3>
+                  <p class="muted">Produce short and varied batches with a unified platform logic, without multiplying specific tooling.</p>
+              </article>
+
+              <article class="card" style="padding:24px;">
+                  <div style="width:48px; height:48px; margin-bottom:16px; background:#EEF4FF; border-radius:12px; display:grid; place-items:center; color:#2563EB;">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                  </div>
+                  <h3 class="h3" style="margin-bottom:8px;">Performance</h3>
+                  <p class="muted">Drastic reduction of manual operations: simplification of steps, better repeatability, and less rework.</p>
+              </article>
+
+              <article class="card" style="padding:24px;">
+                  <div style="width:48px; height:48px; margin-bottom:16px; background:#F3E8FF; border-radius:12px; display:grid; place-items:center; color:#7C3AED;">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <h3 class="h3" style="margin-bottom:8px;">Standardization</h3>
+                  <p class="muted">A reproducible and controllable process, integrating native control points adapted to QA/QC requirements.</p>
+              </article>
+
+          </div>
+      </div>
+  </section>
+
+    <section class="section section--soft" id="impact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2">Industrial Agility</h2>
+            <p class="subtle">Don't block your high-speed lines for clinical batches or R&D anymore.</p>
+          </div>
+        </div>
+        
+        <div class="hero__stats" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 24px;">
+            
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:var(--blue);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: var(--blue); margin-bottom:4px;">÷ 5</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Changeover Time *</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:#ef4444;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: #ef4444; margin-bottom:4px;">0%</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Start-up Waste **</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:var(--teal);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: var(--teal); margin-bottom:4px;">&lt; 1k</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">Units / Batch ***</div>
+            </div>
+
+            <div class="stat" style="padding: 24px; text-align:center; background:white; box-shadow:var(--shadow2); border:1px solid var(--border);">
+                <div style="width:48px; height:48px; margin:0 auto 12px; background:var(--bg2); border-radius:50%; display:grid; place-items:center; color:#8b5cf6;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <div class="stat__kpi" style="font-size: 42px; line-height:1; color: #8b5cf6; margin-bottom:4px;">x2</div>
+                <div class="stat__txt" style="font-size: 16px; font-weight:800; color:var(--text);">R&D Speed ****</div>
+            </div>
+        </div>
+
+        <div class="infoCard" style="background: rgba(255,255,255,0.6); border:1px solid var(--border);">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;">
+                <div>
+                    <div style="margin-bottom: 16px;">
+                        <strong style="color:var(--blue); display:block; margin-bottom:4px;">* Ultra-fast Changeover</strong>
+                        <p class="small muted" style="margin:0;">Switching from product A to product B on a classic line takes hours of cleaning and adjustment. On our machine, simply change the cartridge and the print file. Setup time divided by 5.</p>
+                    </div>
+                    <div>
+                        <strong style="color:#ef4444; display:block; margin-bottom:4px;">** Zero waste of precious material</strong>
+                        <p class="small muted" style="margin:0;">Rotary presses require "launching" the machine, wasting kilograms of powder before being compliant. 3D printing is good from the first unit. Ideal for expensive APIs.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style="margin-bottom: 16px;">
+                        <strong style="color:var(--teal); display:block; margin-bottom:4px;">*** The missing link (Clinical batches)</strong>
+                        <p class="small muted" style="margin:0;">Your industrial lines (50,000 un/h) are not profitable for producing 500 clinical trial tablets. Our solution fills this capacity gap without tying up your main tool.</p>
+                    </div>
+                    <div>
+                        <strong style="color:#8b5cf6; display:block; margin-bottom:4px;">**** Accelerate your R&D iterations</strong>
+                        <p class="small muted" style="margin:0;">Test multiple shapes, dosages, or dissolution kinetics in the same day. Drastically reduce your "Time to Market" for new molecules.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top:30px; text-align:center;">
+            <a class="btn btn-primary" href="#lead">Study an R&D use case</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Progressive Integration</h2>
+            </div>
+            <div class="cards3">
+                <article class="card">
+                    <div class="card__img" style="height:160px; display:grid; place-items:center; overflow:hidden;">
+                        <img src="../assets/img/ui-screen.jpg" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">1. Pilot</h3>
+                        <p class="muted">Validation of use cases, first performance metrics, and process scoping.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__img" style="height:160px; display:grid; place-items:center; overflow:hidden;">
+                        <img src="../assets/img/cartridges.jpg" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">2. Tech Transfer</h3>
+                        <p class="muted">Transfer, documentation, QA/QC control points, and integration into the quality system.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__img" style="height:160px; display:grid; place-items:center; overflow:hidden;">
+                        <img src="../assets/img/mb-therapeutics-production.png" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="h3">3. Scale-up</h3>
+                        <p class="muted">Progressive scale-up: cadence, robustness, organization & maintenance.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Industrial Reviews</h2>
+            </div>
+            <div class="testimonials">
+                <figure class="tcard">
+                    <blockquote>“The flexibility of the platform allows handling clinical batches without mobilizing large lines.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake2.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Site Director</div>
+                            <div class="tcard__role">International CDMO</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tcard">
+                    <blockquote>“Tech Transfer was simplified thanks to the standardization of printing parameters.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake3.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Methods Manager</div>
+                            <div class="tcard__role">Pharma Manufacturer</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tcard">
+                    <blockquote>“Reducing changeover time between two dosages is an immediate profitability lever.”</blockquote>
+                    <figcaption class="tcard__who">
+                        <img class="avatar" src="../assets/img/fake1.jpeg" alt="">
+                        <div>
+                            <div class="tcard__name">Op Ex Manager</div>
+                            <div class="tcard__role">Industrial Group</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft" id="faq">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">CDMO FAQ</h2>
+            </div>
+            <div class="faq">
+                <details class="faq__item">
+                    <summary>What volumes / batches are relevant?</summary>
+                    <div class="faq__content">The platform is adapted to small and medium multi-dosage series, where traditional fixed costs are too high.</div>
+                </details>
+                <details class="faq__item">
+                    <summary>How do you approach validation?</summary>
+                    <div class="faq__content">Progressive approach: pilot, document scoping, QA/QC control points, then consolidation in tech transfer.</div>
+                </details>
+                <details class="faq__item">
+                    <summary>Molecule roadmap (3 → 18): how to plan?</summary>
+                    <div class="faq__content">We start with molecules with higher value/volume, then expand progressively according to industrial priorities.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="lead">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2">Technical Discussion</h2>
+            <p class="subtle">Validate integration, volumes, and QA/QC (30 min).</p>
+          </div>
+        </div>
+
+        <div class="contact">
+            <aside class="contact__side">
+                <div class="infoCard">
+                    <div class="infoCard__title">Topics covered</div>
+                    <ul class="bullets">
+                        <li>Molecule feasibility</li>
+                        <li>Existing line integration</li>
+                        <li>Validation & GMP</li>
+                    </ul>
+                </div>
+                <div class="infoCard infoCard--teal">
+                    <div class="infoCard__title">Confidential</div>
+                    <p class="muted small">NDA exchange possible from the first call.</p>
+                </div>
+            </aside>
+
+            <form class="form" id="leadForm">
+                <div class="form__grid">
+                    <label class="field">
+                        <span>Name</span>
+                        <input type="text" id="name" required placeholder="Your name">
+                    </label>
+                    <label class="field">
+                        <span>Work Email</span>
+                        <input type="email" id="email" required placeholder="email@company.com">
+                    </label>
+                    <label class="field">
+                        <span>Company</span>
+                        <input type="text" id="company" required placeholder="CDMO / Industrial">
+                    </label>
+                    <label class="field">
+                        <span>Role</span>
+                        <select id="role">
+                            <option>Industrialization</option>
+                            <option>Production</option>
+                            <option>QA / QC</option>
+                            <option>Management</option>
+                        </select>
+                    </label>
+                    <label class="field field--full">
+                        <span>Message (Optional)</span>
+                        <textarea id="message" rows="3" placeholder="Goals, constraints..."></textarea>
+                    </label>
+                    
+                    <div class="form__actions field--full">
+                        <button class="btn btn-primary w-full" type="submit" id="submitBtn">Request a discussion</button>
+                        <div id="toastOk" style="display:none; color:var(--teal); margin-top:10px;">✅ Request sent.</div>
+                        <div id="toastErr" style="display:none; color:red; margin-top:10px;">❌ Error sending.</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div>
+          <div class="footer__name">MB Therapeutics</div>
+          <div class="footer__tag">Industry & CDMO</div>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>© 2026 MB Therapeutics</span>
+        <span>•</span>
+        <a href="./legal.html">Legal Notices</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+  <script src="../js/industrie.js" defer></script>
+</body>
+</html>

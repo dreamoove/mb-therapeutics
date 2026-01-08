@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B7A86" />
+
+  <title>Notre Histoire — MB Therapeutics</title>
+  <meta name="description" content="Découvrez l'histoire de MB Therapeutics : de la rencontre entre un pharmacien et un ingénieur à la révolution de l'impression 3D de médicaments." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+    <header class="header" id="top">
+        <div class="container header__inner">
+          <a class="logo" href="./index.html" aria-label="MB Therapeutics — Accueil">
+            <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+            <div class="logo__txt">
+              <span class="logo__name">MB Therapeutics</span>
+              <span class="logo__tag">Machine 3D • Médicament personnalisé</span>
+            </div>
+          </a>
+    
+          <nav class="nav" aria-label="Navigation principale">
+            
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./use-cases.html" class="dropdown-item is-hub">
+                        <strong>Vue d'ensemble</strong>
+                        <span>Tous les cas d'usage</span>
+                    </a>
+                    
+                    <a href="./chu.html" class="dropdown-item">
+                        <strong>Hôpital</strong>
+                        <span>Pour les PUI et CHU</span>
+                    </a>
+                    <a href="./pharma.html" class="dropdown-item">
+                        <strong>Officine</strong>
+                        <span>Pour les préparatoires</span>
+                    </a>
+                    <a href="./industrie.html" class="dropdown-item">
+                        <strong>Industrie</strong>
+                        <span>Pour les CDMO & Labos</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Technologie <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./plateform.html" class="dropdown-item">
+                        <strong>La Plateforme</strong>
+                        <span>Machine, logiciel et QA/QC</span>
+                    </a>
+                    <a href="./process.html" class="dropdown-item">
+                        <strong>Le Process</strong>
+                        <span>De la poudre au médicament</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-item has-dropdown">
+                <button class="nav-link">Entreprise <span class="arrow">▼</span></button>
+                <div class="dropdown-menu">
+                    <a href="./equipe.html" class="dropdown-item">Notre Équipe</a>
+                    <a href="./histoire.html" class="dropdown-item">Notre Histoire</a>
+                    <a href="./proofs.html" class="dropdown-item">Preuves & Avis</a>
+                </div>
+            </div>
+    
+            <a href="./index.html#blog" class="nav-link">Blog</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </nav>
+    
+          <div class="header__actions">
+            <div class="lang" aria-label="Langue">
+                <a class="lang__pill is-active" href="#">FR</a>
+                <a class="lang__pill" href="#">EN</a>
+            </div>
+    
+            <button class="iconbtn" id="themeToggle" type="button" aria-label="Thème sombre">🌙</button>
+            <a class="btn btn-primary hide-mobile" href="./contact.html">Demander un échange</a>
+            <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+          </div>
+        </div>
+    
+        <div class="menuOverlay" id="menuOverlay" hidden></div>
+        <nav class="mobileNav" id="mobileNav" hidden>
+          <div class="mobileNav__head">
+            <span class="mobileNav__title">Menu</span>
+            <button class="mobileNav__close" id="menuClose">×</button>
+          </div>
+          
+          <div class="mobileNav__links">
+            
+            <details class="mobile-group">
+                <summary>Solutions</summary>
+                <div class="mobile-sub">
+                    <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Vue d'ensemble</a>
+                    <a href="./chu.html">Hôpital</a>
+                    <a href="./pharma.html">Officine</a>
+                    <a href="./industrie.html">Industrie</a>
+                </div>
+            </details>
+    
+            <details class="mobile-group">
+                <summary>Technologie</summary>
+                <div class="mobile-sub">
+                    <a href="./plateform.html">La Plateforme</a>
+                    <a href="./process.html">Le Process</a>
+                </div>
+            </details>
+    
+            <details class="mobile-group">
+                <summary>Entreprise</summary>
+                <div class="mobile-sub">
+                    <a href="./equipe.html">Notre Équipe</a>
+                    <a href="./histoire.html">Notre Histoire</a>
+                    <a href="./proofs.html">Preuves</a>
+                </div>
+            </details>
+    
+            <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+            <a class="mobileNav__link" href="./contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero-badges">
+            <span class="badge badge-award">Genèse</span>
+            <span class="badge">Innovation Santé</span>
+            <span class="badge">Souveraineté</span>
+          </div>
+
+          <h1 class="hero__title">
+            De l'idée à la réalité industrielle
+          </h1>
+
+          <p class="hero__lead">
+            Tout part d'un constat terrain : l'écrasement des comprimés pour les enfants n'est plus acceptable. Découvrez comment nous avons transformé une frustration médicale en une solution technologique.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn-primary" href="#timeline">Voir les étapes clés</a>
+            <a class="btn btn-secondary" href="#team">Rencontrer les fondateurs</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+            <img class="hero__video" src="../assets/img/equipe.png" alt="Les fondateurs de MB Therapeutics" style="object-fit:cover;">
+            <div class="hero__mediaShade"></div>
+            <div class="hero__caption">
+                <span class="pill pill-teal">L'équipe</span>
+                <span class="pill">Depuis 2019</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+          <div class="hero__grid" style="align-items:center; gap:48px;">
+              
+              <div>
+                  <div class="badge" style="margin-bottom:16px; background:#EEF4FF; color:#2563EB;">Le point de départ</div>
+                  <h2 class="h2" style="margin-bottom:20px;">La rencontre de deux mondes</h2>
+                  
+                  <div style="padding-left:20px; border-left:2px solid var(--border);">
+                      <p class="muted" style="margin-bottom:16px;">
+                          <strong>2019.</strong> D'un côté, <strong>Ian Soulairol</strong>, pharmacien hospitalier au CHU de Nîmes, frustré de devoir "bricoler" des médicaments adultes pour soigner des nouveau-nés.
+                      </p>
+                      <p class="muted" style="margin-bottom:16px;">
+                          De l'autre, <strong>Stéphane Roulon</strong>, ingénieur R&D chez Sanofi, expert en impression 3D, cherchant une application concrète pour cette technologie.
+                      </p>
+                      <p class="muted">
+                          Leur pari : créer une machine capable de produire le <strong>médicament parfait</strong> (dose, forme, goût) en appuyant sur un bouton.
+                      </p>
+                  </div>
+              </div>
+              
+              <div class="card" style="border:0; border-left:4px solid #F87171; box-shadow:var(--shadow2); padding:32px; background: linear-gradient(to bottom right, #FEF2F2, white);">
+                  <h3 class="h3" style="margin-bottom:20px; color:#B91C1C; display:flex; align-items:center; gap:10px;">
+                      <span style="background:white; border-radius:50%; width:32px; height:32px; display:grid; place-items:center; box-shadow:0 2px 4px rgba(0,0,0,0.1);">🚨</span>
+                      Le constat initial
+                  </h3>
+                  <ul class="bullets">
+                      <li style="margin-bottom:12px; color:#7F1D1D;">
+                          <strong>Risque d'erreur :</strong> Broyage manuel de comprimés et dilution approximative.
+                      </li>
+                      <li style="margin-bottom:12px; color:#7F1D1D;">
+                          <strong>Inadapté :</strong> Goût amer et formes impossibles à avaler pour un enfant.
+                      </li>
+                      <li style="color:#7F1D1D;">
+                          <strong>Pénible :</strong> Perte de temps considérable pour les équipes soignantes.
+                      </li>
+                  </ul>
+                  <div style="margin-top:24px; padding-top:20px; border-top:1px solid rgba(0,0,0,0.05); color:#2563EB; font-weight:700; font-size:15px; display:flex; align-items:center; gap:8px;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                      La solution : L'automatisation 3D
+                  </div>
+              </div>
+  
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="timeline">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Les jalons de notre croissance</h2>
+                <p class="subtle">D'un projet de recherche à une entreprise lauréate France 2030.</p>
+            </div>
+
+            <div class="cards3" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                
+                <article class="card" style="border-top:4px solid #93C5FD;">
+                    <div style="padding:24px;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:16px;">
+                            <span class="badge" style="background:#EFF6FF; color:#1D4ED8;">2019-20</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg>
+                        </div>
+                        <h3 class="h3" style="font-size:18px; margin-bottom:8px;">Preuve de Concept</h3>
+                        <p class="muted small">Validation de la faisabilité technique : la 3D respecte les normes pharma (dosage, dissolution).</p>
+                    </div>
+                </article>
+
+                <article class="card" style="border-top:4px solid #2DD4BF;">
+                    <div style="padding:24px;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:16px;">
+                            <span class="badge" style="background:#F0FDFA; color:#0F766E;">2022</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4 8 4v14"/><path d="M17 21v-8.5a1.5 1.5 0 0 0-1.5-1.5h-5a1.5 1.5 0 0 0-1.5 1.5V21"/><path d="M9 10a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1z"/></svg>
+                        </div>
+                        <h3 class="h3" style="font-size:18px; margin-bottom:8px;">Création de MB</h3>
+                        <p class="muted small">Lancement officiel à Montpellier. Transformation du prototype de labo en machine industrielle.</p>
+                    </div>
+                </article>
+
+                <article class="card" style="border-top:4px solid #A78BFA;">
+                    <div style="padding:24px;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:16px;">
+                            <span class="badge" style="background:#F5F3FF; color:#7C3AED;">2023</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h3 class="h3" style="font-size:18px; margin-bottom:8px;">Première Mondiale</h3>
+                        <p class="muted small">Installation au CHU de Nîmes. Production de lots cliniques pour de vrais patients.</p>
+                    </div>
+                </article>
+
+                <article class="card" style="border-top:4px solid #FBBF24;">
+                    <div style="padding:24px;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:16px;">
+                            <span class="badge" style="background:#FFFBEB; color:#B45309;">2024</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        </div>
+                        <h3 class="h3" style="font-size:18px; margin-bottom:8px;">Lauréat France 2030</h3>
+                        <p class="muted small">Reconnaissance de l'État. Accélération industrielle et déploiement national.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--dark" id="team">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2 h2--light">Ceux qui portent la vision</h2>
+                <p class="subtle subtle--light">L'alliance de l'expertise clinique et de l'ingénierie industrielle.</p>
+            </div>
+
+            <div class="hero__grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:32px;">
+                
+                <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:32px; transition:transform 0.2s;">
+                    <div style="display:flex; align-items:center; gap:20px; margin-bottom:24px;">
+                        <img src="../assets/img/stephane.jpg" alt="Stéphane Roulon" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,0.2);">
+                        <div>
+                            <h3 class="h3" style="color:white; margin:0; font-size:20px;">Stéphane Roulon</h3>
+                            <div style="color:var(--teal); font-weight:600; font-size:14px; margin-top:4px;">CEO & Co-fondateur</div>
+                            <div style="color:rgba(255,255,255,0.5); font-size:13px;">Ex-Sanofi R&D • Ingénieur Arts & Métiers</div>
+                        </div>
+                    </div>
+                    <p style="color:rgba(255,255,255,0.8); line-height:1.6; font-style:italic; border-left:3px solid var(--teal); padding-left:16px; margin-bottom:0;">
+                        "Mon but est de rendre la technologie transparente pour le pharmacien : appuyer sur un bouton et obtenir un médicament sûr, sans se soucier de la machine."
+                    </p>
+                </div>
+
+                <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:32px; transition:transform 0.2s;">
+                    <div style="display:flex; align-items:center; gap:20px; margin-bottom:24px;">
+                        <img src="../assets/img/ian.jpg" alt="Ian Soulairol" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,0.2);">
+                        <div>
+                            <h3 class="h3" style="color:white; margin:0; font-size:20px;">Ian Soulairol</h3>
+                            <div style="color:var(--blue); font-weight:600; font-size:14px; margin-top:4px;">CSO & Co-fondateur</div>
+                            <div style="color:rgba(255,255,255,0.5); font-size:13px;">Pharmacien CHU • Maître de Conf.</div>
+                        </div>
+                    </div>
+                    <p style="color:rgba(255,255,255,0.8); line-height:1.6; font-style:italic; border-left:3px solid var(--blue); padding-left:16px; margin-bottom:0;">
+                        "Je voyais au quotidien les limites du manuel à l'hôpital. Il fallait une solution industrielle pour sécuriser mes équipes et garantir la dose délivrée aux enfants."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+            <div class="cta-bar">
+                <div>
+                    <h2 class="h2" style="font-size:24px;">Participez à la suite de l'histoire</h2>
+                    <p class="cta-bar__txt">
+                        Vous êtes un établissement de santé ou un industriel ? Écrivons le prochain chapitre ensemble.
+                    </p>
+                </div>
+                <div class="cta-bar__actions">
+                    <a class="btn btn-primary" href="./contact.html">Nous contacter</a>
+                    <a class="btn btn-secondary" href="./platform.html">Voir la technologie</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div>
+          <div class="footer__name">MB Therapeutics</div>
+          <div class="footer__tag">Machine 3D • Médicament personnalisé</div>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Liens footer">
+        <a href="./use-cases.html">Cas d’usage</a>
+        <a href="./platform.html">Plateforme</a>
+        <a href="./process.html">Process</a>
+        <a href="./preuves.html">Preuves</a>
+        <a href="./index.html#blog">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> MB Therapeutics</span>
+        <span>•</span>
+        <a href="./legal.html">Mentions légales</a>
+        <span>•</span>
+        <a href="./privacy.html">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+</body>
+</html>

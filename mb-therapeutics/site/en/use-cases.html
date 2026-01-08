@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B7A86" />
+
+  <title>Use Cases — MB Therapeutics</title>
+  <meta name="description" content="Discover our use cases: Hospitals, Compounding Pharmacies, and CDMOs. A unique platform adapted to your production and quality constraints." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="./index.html" aria-label="MB Therapeutics — Home">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div class="logo__txt">
+          <span class="logo__name">MB Therapeutics</span>
+          <span class="logo__tag">3D Machine • Personalized Medicine</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main Navigation">
+        
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Solutions <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./use-cases.html" class="dropdown-item is-hub">
+                    <strong>Overview</strong>
+                    <span>All use cases</span>
+                </a>
+                
+                <a href="./chu.html" class="dropdown-item">
+                    <strong>Hospitals</strong>
+                    <span>For CHU & In-house Pharmacy</span>
+                </a>
+                <a href="./pharma.html" class="dropdown-item">
+                    <strong>Compounding</strong>
+                    <span>For Pharmacies</span>
+                </a>
+                <a href="./industrie.html" class="dropdown-item">
+                    <strong>Industry</strong>
+                    <span>For CDMOs & Labs</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Technology <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./plateform.html" class="dropdown-item">
+                    <strong>The Platform</strong>
+                    <span>Machine, Software, and QA/QC</span>
+                </a>
+                <a href="./process.html" class="dropdown-item">
+                    <strong>The Process</strong>
+                    <span>From Powder to Medicine</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+            <button class="nav-link">Company <span class="arrow">▼</span></button>
+            <div class="dropdown-menu">
+                <a href="./equipe.html" class="dropdown-item">Our Team</a>
+                <a href="./histoire.html" class="dropdown-item">Our History</a>
+                <a href="./proofs.html" class="dropdown-item">Proofs & Reviews</a>
+            </div>
+        </div>
+
+        <a href="./index.html#blog" class="nav-link">Blog</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" aria-label="Language">
+            <a class="lang__pill" href="#" onclick="const page = window.location.pathname.split('/').pop() || 'use-cases.html'; window.location.href = '../fr/' + page; return false;">FR</a>
+            <span class="lang__pill is-active">EN</span>
+        </div>
+
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Dark Mode">🌙</button>
+        <a class="btn btn-primary hide-mobile" href="./contact.html">Request a meeting</a>
+        <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+      </div>
+    </div>
+
+    <div class="menuOverlay" id="menuOverlay" hidden></div>
+    <nav class="mobileNav" id="mobileNav" hidden>
+      <div class="mobileNav__head">
+        <span class="mobileNav__title">Menu</span>
+        <button class="mobileNav__close" id="menuClose">×</button>
+      </div>
+      
+      <div class="mobileNav__links">
+        
+        <details class="mobile-group">
+            <summary>Solutions</summary>
+            <div class="mobile-sub">
+                <a href="./use-cases.html" style="font-weight:800; color:var(--teal);">Overview</a>
+                <a href="./chu.html">Hospitals</a>
+                <a href="./pharma.html">Compounding</a>
+                <a href="./industrie.html">Industry</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Technology</summary>
+            <div class="mobile-sub">
+                <a href="./plateform.html">The Platform</a>
+                <a href="./process.html">The Process</a>
+            </div>
+        </details>
+
+        <details class="mobile-group">
+            <summary>Company</summary>
+            <div class="mobile-sub">
+                <a href="./equipe.html">Our Team</a>
+                <a href="./histoire.html">Our History</a>
+                <a href="./proofs.html">Proofs</a>
+            </div>
+        </details>
+
+        <a class="mobileNav__link" href="./index.html#blog">Blog</a>
+        <a class="mobileNav__link" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero-badges">
+            <span class="badge">Hospitals & CHU</span>
+            <span class="badge">Compounding Pharmacies</span>
+            <span class="badge">CDMO & Industrials</span>
+            <span class="badge badge-award">QA/QC Environments</span>
+          </div>
+
+          <h1 class="hero__title">
+            3 use cases, one industrial platform
+          </h1>
+
+          <p class="hero__lead">
+            Each environment presents specific constraints. MB Therapeutics adapts the scoping, metrics, and project journey, from pilot to scale-up.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn-primary" href="#selection">View Use Cases</a>
+            <a class="btn btn-secondary" href="#contact">Request a meeting</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+            <img class="hero__video" src="../assets/img/mb-therapeutics-production.png" alt="MB Therapeutics Platform" style="object-fit:cover;">
+            <div class="hero__mediaShade"></div>
+            <div class="hero__caption">
+                <span class="pill pill-teal">Unique Platform</span>
+                <span class="pill">Adaptability</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="selection">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2">Select your environment</h2>
+            <p class="subtle">Access technical details and the dedicated impact calculator.</p>
+          </div>
+        </div>
+
+        <div class="cards3">
+          
+          <article class="card">
+            <img class="card__img" src="../assets/img/mb-therapeutics-chu.png" alt="Hospital" loading="lazy">
+            <div class="card__body">
+              <h3 class="h3">Hospitals & CHU</h3>
+              <p class="muted">
+                <strong>Challenges:</strong> Preparation time, standardization, pediatrics, and patient safety.
+              </p>
+              <div style="margin-top:auto; display:grid; gap:8px;">
+                <a class="btn btn-primary w-full" href="./chu.html#impact">Calculate Impact</a>
+                <a class="link" href="./chu.html" style="text-align:center;">View Details →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="../assets/img/mb-therapeutics-pharmacie.png" alt="Pharmacy" loading="lazy">
+            <div class="card__body">
+              <h3 class="h3">Compounding Pharmacies</h3>
+              <p class="muted">
+                <strong>Challenges:</strong> Reproducibility, MSD reduction, traceability, and profitability.
+              </p>
+              <div style="margin-top:auto; display:grid; gap:8px;">
+                <a class="btn btn-primary w-full" href="./pharma.html#impact">Calculate Impact</a>
+                <a class="link" href="./pharma.html" style="text-align:center;">View Details →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="../assets/img/mb-therapeutics-industriel.png" alt="Industry" loading="lazy">
+            <div class="card__body">
+              <h3 class="h3">CDMO & Industrials</h3>
+              <p class="muted">
+                <strong>Challenges:</strong> Flexible industrialization, scale-up, compliance, and unit cost.
+              </p>
+              <div style="margin-top:auto; display:grid; gap:8px;">
+                <a class="btn btn-primary w-full" href="./industrie.html#impact">Calculate Impact</a>
+                <a class="link" href="./industrie.html" style="text-align:center;">View Details →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2">Measured Indicators</h2>
+            <p class="subtle">Our calculation models are based on your real data. Results are instant.</p>
+          </div>
+        </div>
+
+        <div class="hero__stats" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+            
+          <div class="stat" style="text-align:center; padding:24px;">
+              <div style="width:48px; height:48px; margin:0 auto 12px; background:#EEF4FF; border-radius:50%; display:grid; place-items:center; color:#2563EB;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="stat__kpi" style="font-size:36px; color:#2563EB;">- 450 h</div>
+              <div class="stat__txt">Operator time / year</div>
+          </div>
+
+          <div class="stat" style="text-align:center; padding:24px;">
+              <div style="width:48px; height:48px; margin:0 auto 12px; background:#E0F2F1; border-radius:50%; display:grid; place-items:center; color:#0B7A86;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              </div>
+              <div class="stat__kpi" style="font-size:36px; color:#0B7A86;">+ 30 %</div>
+              <div class="stat__txt">Additional Capacity</div>
+          </div>
+
+          <div class="stat" style="text-align:center; padding:24px;">
+              <div style="width:48px; height:48px; margin:0 auto 12px; background:#F3E8FF; border-radius:50%; display:grid; place-items:center; color:#7C3AED;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              </div>
+              <div class="stat__kpi" style="font-size:36px; color:#7C3AED;">÷ 2</div>
+              <div class="stat__txt">On Cost Price</div>
+          </div>
+
+           <div class="stat" style="text-align:center; padding:24px;">
+              <div style="width:48px; height:48px; margin:0 auto 12px; background:#DCFCE7; border-radius:50%; display:grid; place-items:center; color:#16A34A;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div class="stat__kpi" style="font-size:36px; color:#16A34A;">0 %</div>
+              <div class="stat__txt">Start-up waste</div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Progressive Deployment</h2>
+                <p class="subtle">A structured methodology to secure adoption.</p>
+            </div>
+
+            <div class="cards3">
+                
+              <article class="card">
+                  <div class="card__img" style="height:180px; position:relative;">
+                      <img src="../assets/img/ui-screen.jpg" alt="Software Interface" style="width:100%; height:100%; object-fit:cover;">
+                      <div style="position:absolute; top:12px; left:12px;" class="badge badge-award">Step 1</div>
+                  </div>
+                  <div class="card__body">
+                      <h3 class="h3">Scoping & Digital</h3>
+                      <p class="muted">Analysis of existing data via our software.</p>
+                      <ul class="bullets" style="margin-top:12px;">
+                          <li>Volume analysis</li>
+                          <li>QA/QC constraints</li>
+                          <li>Definition of metrics</li>
+                      </ul>
+                  </div>
+              </article>
+
+              <article class="card">
+                  <div class="card__img" style="height:180px; position:relative;">
+                      <img src="../assets/img/mb-therapeutics-production.png" alt="Pilot Machine" style="width:100%; height:100%; object-fit:cover;">
+                      <div style="position:absolute; top:12px; left:12px;" class="badge badge-award">Step 2</div>
+                  </div>
+                  <div class="card__body">
+                      <h3 class="h3">On-site Pilot</h3>
+                      <p class="muted">Installation of a unit to validate the real flow.</p>
+                      <ul class="bullets" style="margin-top:12px;">
+                          <li>Physical installation</li>
+                          <li>Protocol validation</li>
+                          <li>Real ROI measurement</li>
+                      </ul>
+                  </div>
+              </article>
+
+              <article class="card">
+                  <div class="card__img" style="height:180px; position:relative;">
+                      <img src="../assets/img/mb-therapeutics-industriel.png" alt="Industry" style="width:100%; height:100%; object-fit:cover;">
+                      <div style="position:absolute; top:12px; left:12px;" class="badge badge-award">Step 3</div>
+                  </div>
+                  <div class="card__body">
+                      <h3 class="h3">Scale-up</h3>
+                      <p class="muted">Routine deployment and IT integration.</p>
+                      <ul class="bullets" style="margin-top:12px;">
+                          <li>IT integration (LIMS)</li>
+                          <li>Final documentation</li>
+                          <li>Routine production</li>
+                      </ul>
+                  </div>
+              </article>
+          </div>
+        </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Answers to your constraints</h2>
+            </div>
+            <div class="cards3">
+                
+              <div class="tcard" style="position:relative; overflow:hidden;">
+                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+                      <div style="color:#0B7A86; background:#E0F2F1; padding:8px; border-radius:8px;">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                      </div>
+                      <div class="infoCard__title" style="margin:0;">Quality & Traceability</div>
+                  </div>
+                  <p class="muted small">The system integrates native QA/QC. Each dose produced is associated with a batch, with an auditable and tamper-proof production report.</p>
+              </div>
+
+              <div class="tcard" style="position:relative; overflow:hidden;">
+                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+                      <div style="color:#2563EB; background:#EEF4FF; padding:8px; border-radius:8px;">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      </div>
+                      <div class="infoCard__title" style="margin:0;">Patient Safety</div>
+                  </div>
+                  <p class="muted small">Drastic reduction of manual manipulations. Automated checks of printing parameters to guarantee the delivered dose.</p>
+              </div>
+
+              <div class="tcard" style="position:relative; overflow:hidden;">
+                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+                      <div style="color:#7C3AED; background:#F3E8FF; padding:8px; border-radius:8px;">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                      </div>
+                      <div class="infoCard__title" style="margin:0;">IT Integration</div>
+                  </div>
+                  <p class="muted small">The platform is designed to interface with your management software (LIMS, Patient Record, ERP) according to your data exchange standards.</p>
+              </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section class="section partners">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2">Ecosystem & Partners</h2>
+          </div>
+          <div class="partners-marquee" role="list">
+            <div class="partners-track">
+              <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt="Eurobiomed"></div>
+              <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt="CHU Nîmes"></div>
+              <div class="partner-pill"><img src="../assets/parteners/image001.png" alt="Lynxter"></div>
+              <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt="BIC"></div>
+              <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt="BPI"></div>
+              <div class="partners-dup" aria-hidden="true">
+                <div class="partner-pill"><img src="../assets/parteners/Logo-eurobiomed-600x227.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/chu-nimes-299x200.jpg" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/image001.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/bic3m.png" alt=""></div>
+                <div class="partner-pill"><img src="../assets/parteners/bpi-france-342x100.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2">Decision-making Questions</h2>
+            </div>
+            <div class="faq">
+                <details class="faq__item">
+                    <summary>Can we test without modifying existing workflows?</summary>
+                    <div class="faq__content">Yes. The pilot is designed to run in parallel with your current flows ("side-by-side") to compare metrics without risk of disruption.</div>
+                </details>
+                <details class="faq__item">
+                    <summary>Is the ROI reliable?</summary>
+                    <div class="faq__content">Our calculators use your own costs (hourly rates, consumables, time). We only provide the calculation method; you keep control over the assumptions.</div>
+                </details>
+                <details class="faq__item">
+                    <summary>What is the average time for a pilot?</summary>
+                    <div class="faq__content">Between initial scoping and on-site startup, generally count 8 to 12 weeks depending on the complexity of internal validations.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft" id="contact">
+        <div class="container">
+          <div class="cta-bar" style="display:block; text-align:center; padding: 40px;">
+            <h2 class="h2" style="margin-bottom:12px;">Identify your use case</h2>
+            <p class="muted" style="margin-bottom:32px; max-width:600px; margin-left:auto; margin-right:auto;">
+                Select your profile to access profitability simulators and dedicated technical details.
+            </p>
+            
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:16px; margin-bottom: 32px;">
+                
+                <a href="./chu.html" style="display:flex; flex-direction:column; align-items:center; gap:12px; padding:24px; background:var(--card); border:1px solid var(--border); border-radius:16px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='var(--shadow2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <div style="color:#2563EB; background:#EEF4FF; width:48px; height:48px; border-radius:12px; display:grid; place-items:center;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"></path></svg>
+                    </div>
+                    <div style="font-weight:800; color:var(--text);">Hospitals</div>
+                    <div style="font-size:12px; color:var(--muted); font-weight:600;">For CHU & In-house Pharmacy →</div>
+                </a>
+
+                <a href="./pharma.html" style="display:flex; flex-direction:column; align-items:center; gap:12px; padding:24px; background:var(--card); border:1px solid var(--border); border-radius:16px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='var(--shadow2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <div style="color:#0B7A86; background:#E0F2F1; width:48px; height:48px; border-radius:12px; display:grid; place-items:center;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <div style="font-weight:800; color:var(--text);">Compounding</div>
+                    <div style="font-size:12px; color:var(--muted); font-weight:600;">Pharmacies →</div>
+                </a>
+
+                <a href="./industrie.html" style="display:flex; flex-direction:column; align-items:center; gap:12px; padding:24px; background:var(--card); border:1px solid var(--border); border-radius:16px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='var(--shadow2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <div style="color:#7C3AED; background:#F3E8FF; width:48px; height:48px; border-radius:12px; display:grid; place-items:center;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20M2 11h5l3-5 5 6 4-3v13"></path></svg>
+                    </div>
+                    <div style="font-weight:800; color:var(--text);">Industry</div>
+                    <div style="font-size:12px; color:var(--muted); font-weight:600;">CDMO & Labs →</div>
+                </a>
+
+            </div>
+            
+            <div class="hero__cta" style="justify-content:center; border-top:1px solid var(--border); padding-top:24px;">
+                <span class="muted small" style="margin-right:10px; font-weight:600;">Don't fit in the boxes?</span>
+                <a class="btn btn-primary" href="mailto:contact@mb-therapeutics.com">Talk to an expert</a>
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-mb.png" alt="MB Therapeutics" width="36" height="36" />
+        <div>
+          <div class="footer__name">MB Therapeutics</div>
+          <div class="footer__tag">Machine 3D • Personalized Medicine</div>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer Links">
+        <a href="./use-cases.html">Use Cases</a>
+        <a href="./platform.html">Platform</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#preuves">Proofs</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> MB Therapeutics</span>
+        <span>•</span>
+        <a href="./legal.html">Legal Notices</a>
+        <span>•</span>
+        <a href="./privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js" defer></script>
+</body>
+</html>
